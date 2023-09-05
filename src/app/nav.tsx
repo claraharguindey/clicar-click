@@ -8,8 +8,8 @@ const links = [
   { label: 'POÉTICAS', route: '/poeticas' },
   { label: 'USUARIAS', route: '/user' },
   { label: 'VIRTUAL INFRASTRUCTOUR', route: '/virtual-infrastructour' },
-  { label: 'MEDIAR EL DAÑO DIGITAL', route: '/mediar-dano-digital' },
-  { label: 'ARCHIVO', route: '/sostenibilidad-y-archivo' },
+  { label: 'MEDIAR EL DANO DIGITAL', route: '/mediar-dano-digital' },
+  { label: 'ARCHIVO', route: '/archivo' },
   { label: 'RESIDUOS SÓNICOS', route: '/residuos-sonicos' },
 ];
 

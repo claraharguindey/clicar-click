@@ -6,7 +6,7 @@ export default function MediarElDano() {
 
   return (
     <section onClick={() => setClicksCount(clicksCount + 1)}>
-      <h1>mediar el daño digital</h1>
+      <h1>mediar el dano digital</h1>
       <article>
         <p>
           <b>

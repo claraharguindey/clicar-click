@@ -2,20 +2,23 @@
 import styles from './page.module.css';
 import { RefObject, useState } from 'react';
 import { useRef } from 'react';
+import Image from 'next/image';
 import { useGlobalContext } from './context/store';
+import Link from 'next/link';
 
 const Home = () => {
   const [initialClicksCount, setInitialClicksCount] = useState(0);
+  const [linksActive, setLinksActive] = useState(false);
   const { clicksCount, setClicksCount } = useGlobalContext();
 
-  const container = useRef<HTMLElement>(null);
-  const text0 = useRef<HTMLElement>(null);
-  const text1 = useRef<HTMLElement>(null);
-  const text2 = useRef<HTMLElement>(null);
-  const text3 = useRef<HTMLElement>(null);
-  const text4 = useRef<HTMLElement>(null);
-  const text5 = useRef<HTMLElement>(null);
-  const text6 = useRef<HTMLElement>(null);
+  const container = useRef<HTMLAnchorElement>(null);
+  const text0 = useRef<HTMLAnchorElement>(null);
+  const text1 = useRef<HTMLAnchorElement>(null);
+  const text2 = useRef<HTMLAnchorElement>(null);
+  const text3 = useRef<HTMLAnchorElement>(null);
+  const text4 = useRef<HTMLAnchorElement>(null);
+  const text5 = useRef<HTMLAnchorElement>(null);
+  const text6 = useRef<HTMLAnchorElement>(null);
   const articles = [
     text0,
     text1,
@@ -24,7 +27,7 @@ const Home = () => {
     text4,
     text5,
     text6,
-  ] as RefObject<HTMLElement>[];
+  ] as RefObject<HTMLAnchorElement>[];
 
   const getMousePosition = (
     e: React.MouseEvent,
@@ -63,6 +66,7 @@ const Home = () => {
       getMousePosition(event, articles[initialClicksCount]);
     } else if (initialClicksCount > TEXTS_LENGTH) {
       setGrid();
+      setLinksActive(true);
     }
     setInitialClicksCount(currentClickCount);
   };
@@ -73,9 +77,10 @@ const Home = () => {
         <div className={styles.initMessage}>CLICAR</div>
       ) : null}
       <section ref={container}>
-        <article
+        <Link
+          href={linksActive ? '/' : ''}
           ref={text0}
-          className={`${styles.article} ${styles.article0} ${styles.hidden}`}
+          className={`${styles.article} ${styles.article0} ${styles.hidden} ${styles.firstArticle}`}
         >
           <h2 className={styles.title}>
             0 <br />
@@ -92,105 +97,117 @@ const Home = () => {
             impulsado por el Departamento de Educación del Museo Nacional Centro
             de Arte Reina Sofía durante los meses de *** a *** de 2022.
           </p>
-        </article>
-        <article
-          ref={text1}
-          className={`${styles.article} ${styles.article1} ${styles.hidden}`}
-        >
-          <h2 className={styles.title}>
-            1 <br />
-            <br />
-            Poéticas de lo hipervinculado
-          </h2>
-          {/* <p>
-            {' '}
-            Poéticas de lo hipervinculado pretende mostrar las posibilidades y
-            poéticas de lo que entendemos como mediación cultural digital:
-            prácticas de intermediación entre arte y públicos a través de una
-            tecnología que funciona como medio, y no como fin.
-          </p> */}
-        </article>
-        <article
-          ref={text2}
-          className={`${styles.article} ${styles.article2} ${styles.hidden}`}
-        >
-          <h2 className={styles.title}>
-            2 <br />
-            <br />
-            El usuario en el museo digital
-          </h2>
-          {/* <p>
-            En este encuentro con Elena Villaespesa significamos cómo, a la hora
-            de articular proyectos de mediación digital, resulta importante
-            personalizar a la persona que está al otro lado de la pantalla para
-            facilitar la interacción con nuestra propuesta.
-          </p> */}
-        </article>
-        <article
-          ref={text3}
-          className={`${styles.article} ${styles.article3} ${styles.hidden}`}
-        >
-          <h2 className={styles.title}>
-            3 <br />
-            <br />
-            Virtual infrastructour
-          </h2>
-          {/* <p>
-            Virtual Infrastructour, un itinerario digital realizado por Mario
-            Santamaría, nos revela cómo la mediación cultural digital nos sirve
-            como herramienta para transparentar el museo, percatarnos de su
-            funcionamiento interno, y cuestionarlo desde otros espacios de
-            pensamiento crítico.
-          </p> */}
-        </article>
-        <article
-          ref={text4}
-          className={`${styles.article} ${styles.article4} ${styles.hidden}`}
-        >
-          <h2 className={styles.title}>
-            4 <br />
-            <br />
-            Mediar el daño digital
-          </h2>
-          {/* <p>
-            Entendiendo el museo como un espacio en crisis continua, amenazado
-            por el daño, Ontologías Feministas nos propone abordar lo digital
-            como un espacio poético para plantear esta cuestión y encontrar
-            fórmulas de alivio y reparación.
-          </p> */}
-        </article>
-        <article
-          ref={text5}
-          className={`${styles.article} ${styles.article5} ${styles.hidden}`}
-        >
-          <h2 className={styles.title}>
-            5 <br />
-            <br />
-            Sostenibilidad y archivo
-          </h2>
-          {/* <p>
-            La conservadora Gema Grueso nos acompañó a reflexionar sobre la
-            conservación de proyectos digitales más allá de la temporalidad
-            inmediata, sobre la importancia del archivo en un contexto de
-            producción inmaterial, y las herramientas de las que podemos
-            disponer para desarrollar nuestros proyectos digitales.
-          </p> */}
-        </article>
-        <article
-          ref={text6}
-          className={`${styles.article} ${styles.article6} ${styles.hidden}`}
-        >
-          <h2 className={styles.title}>
-            6 <br />
-            <br />
-            Residuos sónicos
-          </h2>
-          {/* <p>
-            En la propuesta Residuos sónicos de Agnes Pe, atravesamos varios
-            espacios del museo despertando su sonoridad interna, y con ello,
-            dialogando con el edificio y su intrahistoria.
-          </p> */}
-        </article>
+        </Link>
+        <div className={styles.gridRow}>
+          <Link
+            href={linksActive ? '/poeticas' : ''}
+            ref={text1}
+            className={`${styles.article} ${styles.article1} ${styles.hidden}`}
+          >
+            <h2 className={styles.title}>
+              1 <br />
+              <br />
+              Poéticas de lo hipervinculado
+            </h2>
+            <Image
+              className={styles.image}
+              src="/img/grupo.png"
+              width={200}
+              height={250}
+              alt="Un grupo de personas en un pasillo del Museo Reina Sofía elevan sus móviles por encima de sus cabezas y miran la pantalla."
+            />
+          </Link>
+          <Link
+            href={linksActive ? '/user' : ''}
+            ref={text2}
+            className={`${styles.article} ${styles.article2} ${styles.hidden}`}
+          >
+            <h2 className={styles.title}>
+              2 <br />
+              <br />
+              El usuario en el museo digital
+            </h2>
+            <Image
+              className={styles.image}
+              src="/img/movil.png"
+              width={200}
+              height={250}
+              alt="Un grupo de personas en un pasillo del Museo Reina Sofía elevan sus móviles por encima de sus cabezas y miran la pantalla."
+            />
+          </Link>
+          <Link
+            href={linksActive ? '/virtual-infrastructour' : ''}
+            ref={text3}
+            className={`${styles.article} ${styles.article3} ${styles.hidden}`}
+          >
+            <h2 className={styles.title}>
+              3 <br />
+              <br />
+              Virtual infrastructour
+            </h2>
+            <Image
+              className={styles.image}
+              src="/img/virtual-infrastuctour.png"
+              width={200}
+              height={250}
+              alt="La imagen muestra un conjunto de cables."
+            />
+          </Link>
+          <Link
+            href={linksActive ? '/mediar-dano-digital' : ''}
+            ref={text4}
+            className={`${styles.article} ${styles.article4} ${styles.hidden}`}
+          >
+            <h2 className={styles.title}>
+              4 <br />
+              <br />
+              Mediar el dano digital
+            </h2>
+            <Image
+              className={styles.image}
+              src="/img/dano.png"
+              width={200}
+              height={250}
+              alt="Captura de pantalla de una videollamada. En ella se ve a tres personas conectadas."
+            />
+          </Link>
+          <Link
+            href={linksActive ? '/archivo' : ''}
+            ref={text5}
+            className={`${styles.article} ${styles.article5} ${styles.hidden}`}
+          >
+            <h2 className={styles.title}>
+              5 <br />
+              <br />
+              Sostenibilidad y archivo
+            </h2>
+            <Image
+              className={styles.image}
+              src="/img/distorsion.png"
+              width={200}
+              height={250}
+              alt="Imagen de una cara distorsionada, dificilmente reconocible."
+            />
+          </Link>
+          <Link
+            href={linksActive ? '/residuos-sonicos' : ''}
+            ref={text6}
+            className={`${styles.article} ${styles.article6} ${styles.hidden}`}
+          >
+            <h2 className={styles.title}>
+              6 <br />
+              <br />
+              Residuos sónicos
+            </h2>
+            <Image
+              className={styles.image}
+              src="/img/ana.png"
+              width={200}
+              height={250}
+              alt="Una chica acerca un micrófono a una pared."
+            />
+          </Link>
+        </div>
       </section>
     </main>
   );

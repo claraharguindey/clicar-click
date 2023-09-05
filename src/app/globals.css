@@ -1,17 +1,14 @@
-/* Box sizing rules */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-/* Remove default padding */
 ul[class],
 ol[class] {
   padding: 0;
 }
 
-/* Remove default margin */
 body,
 h1,
 h2,
@@ -49,7 +46,6 @@ dd {
   src: url('/Hershey-Noailles-Futura-Duplex-Regular.woff2');
 }
 
-/* Set core body defaults */
 body {
   background: black;
   color: white;
@@ -61,24 +57,15 @@ body {
   cursor: pointer;
 }
 
-/* Remove list styles on ul, ol elements with a class attribute */
 ul,
 ol {
   list-style: none;
 }
 
-/* Make images easier to work with */
-img {
-  max-width: 100%;
-  display: block;
-}
-
-/* Natural flow and rhythm in articles by default */
 article > * + * {
   margin-top: 1em;
 }
 
-/* Inherit fonts for inputs and buttons */
 input,
 button,
 textarea,
