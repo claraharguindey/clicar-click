@@ -19,6 +19,13 @@ const Home = () => {
   const text4 = useRef<HTMLAnchorElement>(null);
   const text5 = useRef<HTMLAnchorElement>(null);
   const text6 = useRef<HTMLAnchorElement>(null);
+  const click0 = useRef<HTMLAnchorElement>(null);
+  const click1 = useRef<HTMLAnchorElement>(null);
+  const click2 = useRef<HTMLAnchorElement>(null);
+  const click3 = useRef<HTMLAnchorElement>(null);
+  const click4 = useRef<HTMLAnchorElement>(null);
+  const click5 = useRef<HTMLAnchorElement>(null);
+  const click6 = useRef<HTMLAnchorElement>(null);
   const articles = [
     text0,
     text1,
@@ -29,9 +36,20 @@ const Home = () => {
     text6,
   ] as RefObject<HTMLAnchorElement>[];
 
+  const clicksItem = [
+    click0,
+    click1,
+    click2,
+    click3,
+    click4,
+    click5,
+    click6,
+  ] as RefObject<HTMLAnchorElement>[];
+
   const getMousePosition = (
     e: React.MouseEvent,
-    item: RefObject<HTMLElement>
+    item: RefObject<HTMLElement>,
+    clickItem: RefObject<HTMLElement>
   ) => {
     var posx = 0;
     var posy = 0;
@@ -46,9 +64,15 @@ const Home = () => {
 
     if (item.current) {
       item.current.style.position = 'absolute';
-      item.current.style.left = `${posx}px`;
-      item.current.style.top = `${posy}px`;
+      item.current.style.left = `${posx + 10}px`;
+      item.current.style.top = `${posy + 10}px`;
       item.current.style.display = 'block';
+    }
+    if (clickItem.current) {
+      clickItem.current.style.position = 'absolute';
+      clickItem.current.style.left = `${posx}px`;
+      clickItem.current.style.top = `${posy - 20}px`;
+      clickItem.current.style.display = 'block';
     }
   };
 
@@ -63,7 +87,11 @@ const Home = () => {
     const currentClickCount = initialClicksCount + 1;
     const TEXTS_LENGTH = 6;
     if (initialClicksCount <= TEXTS_LENGTH) {
-      getMousePosition(event, articles[initialClicksCount]);
+      getMousePosition(
+        event,
+        articles[initialClicksCount],
+        clicksItem[initialClicksCount]
+      );
     } else if (initialClicksCount > TEXTS_LENGTH) {
       setGrid();
       setLinksActive(true);
@@ -77,6 +105,11 @@ const Home = () => {
         <div className={styles.initMessage}>CLICAR</div>
       ) : null}
       <section ref={container}>
+        {clicksItem.map((click, i) => (
+          <span className={`${styles.hidden}`} key={i} ref={click}>
+            clic
+          </span>
+        ))}
         <Link
           href={linksActive ? '/' : ''}
           ref={text0}
