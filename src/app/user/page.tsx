@@ -5,9 +5,9 @@ export default function User() {
   const { clicksCount, setClicksCount } = useGlobalContext();
 
   return (
-    <section onClick={() => setClicksCount(clicksCount + 1)}>
-      <h1>el usuario en el museo virtual</h1>
-      <article>
+    <section className="pageSection" onClick={() => setClicksCount(clicksCount + 1)}>
+      <h1 className="title">el usuario en el museo virtual</h1>
+      <article className="article">
         <p>
           <b>
             En este encuentro con Elena Villaespesa significamos cómo, a la hora

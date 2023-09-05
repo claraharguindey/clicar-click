@@ -29,8 +29,9 @@
 .grid {
   display: flex;
   flex-direction: column;
-  padding: 20px;
-  padding-top: 40px;
+  margin: 20px;
+  margin-top: 40px;
+  animation: fade 1s ease 0s 1 normal forwards;
 
   & .gridRow {
     display: flex;
@@ -61,4 +62,14 @@
 .image {
   object-fit: cover;
   border: 1px solid white;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }

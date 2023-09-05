@@ -85,3 +85,23 @@ body {
   --tw-bg-opacity: 1;
   background-color: rgb(17 17 17 / var(--tw-bg-opacity));
 }
+
+.pageSection {
+  margin: 20px;
+  margin-top: 40px;
+}
+
+.title {
+  font-size: 16px;
+  font-family: hershey;
+  text-transform: uppercase;
+  font-weight: 300;
+  padding-bottom: 20px;
+}
+
+.article {
+  font-size: 14px;
+  font-family: suisse;
+  max-width: 50%;
+  text-align: justify;
+}

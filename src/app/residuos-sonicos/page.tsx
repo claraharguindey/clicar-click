@@ -5,9 +5,9 @@ export default function ResiduosSonicos() {
   const { clicksCount, setClicksCount } = useGlobalContext();
 
   return (
-    <section onClick={() => setClicksCount(clicksCount + 1)}>
-      <h1>residuos sónicos</h1>
-      <article>
+    <section className="pageSection" onClick={() => setClicksCount(clicksCount + 1)}>
+      <h1 className="title">residuos sónicos</h1>
+      <article className="article">
         <p>
           <b>
             <i>Poéticas de lo hipervinculado</i> pretende mostrar las

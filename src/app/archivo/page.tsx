@@ -2,12 +2,12 @@
 
 import { useGlobalContext } from '../context/store';
 
-export default function MediarElDano() {
+export default function Archivo() {
   const { clicksCount, setClicksCount } = useGlobalContext();
 
   return (
     <section className="pageSection" onClick={() => setClicksCount(clicksCount + 1)}>
-      <h1 className="title">mediar el dano digital</h1>
+      <h1 className="title">sostenibilidad y archivo</h1>
       <article className="article">
         <p>
           <b>
