@@ -113,7 +113,7 @@ const Home = () => {
       ) : null}
       <section ref={container}>
         {clicksItem.map((click, i) => (
-          <span className={`${styles.hidden}`} key={i} ref={click}>
+          <span className={styles.hidden} key={i} ref={click}>
             clic
           </span>
         ))}
