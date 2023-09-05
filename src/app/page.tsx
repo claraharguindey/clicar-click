@@ -1,6 +1,6 @@
 'use client';
 import styles from './page.module.css';
-import { RefObject, useState } from 'react';
+import { RefObject, useState, useEffect } from 'react';
 import { useRef } from 'react';
 import Image from 'next/image';
 import { useGlobalContext } from './context/store';
@@ -82,6 +82,13 @@ const Home = () => {
     }
   };
 
+  useEffect(() => {
+    if (clicksCount > 7) {
+      setGrid();
+      setLinksActive(true);
+    }
+  }, []);
+
   const onClick = (event: React.MouseEvent) => {
     setClicksCount(clicksCount + 1);
     const currentClickCount = initialClicksCount + 1;
@@ -101,7 +108,7 @@ const Home = () => {
 
   return (
     <main className={styles.main} onClick={onClick}>
-      {initialClicksCount < 1 ? (
+      {initialClicksCount < 1 && clicksCount < 7 ? (
         <div className={styles.initMessage}>CLICAR</div>
       ) : null}
       <section ref={container}>
@@ -113,7 +120,9 @@ const Home = () => {
         <Link
           href={linksActive ? '/' : ''}
           ref={text0}
-          className={`${styles.article} ${styles.article0} ${styles.hidden} ${styles.firstArticle}`}
+          className={`${styles.article} ${styles.article0} ${
+            clicksCount > 7 ? '' : styles.hidden
+          } ${styles.firstArticle}`}
         >
           <h2 className={styles.title}>
             0 <br />
@@ -135,7 +144,9 @@ const Home = () => {
           <Link
             href={linksActive ? '/poeticas' : ''}
             ref={text1}
-            className={`${styles.article} ${styles.article1} ${styles.hidden}`}
+            className={`${styles.article} ${styles.article1} ${
+              clicksCount > 7 ? '' : styles.hidden
+            }`}
           >
             <h2 className={styles.title}>
               1 <br />
@@ -153,7 +164,9 @@ const Home = () => {
           <Link
             href={linksActive ? '/user' : ''}
             ref={text2}
-            className={`${styles.article} ${styles.article2} ${styles.hidden}`}
+            className={`${styles.article} ${styles.article2} ${
+              clicksCount > 7 ? '' : styles.hidden
+            }`}
           >
             <h2 className={styles.title}>
               2 <br />
@@ -171,7 +184,9 @@ const Home = () => {
           <Link
             href={linksActive ? '/virtual-infrastructour' : ''}
             ref={text3}
-            className={`${styles.article} ${styles.article3} ${styles.hidden}`}
+            className={`${styles.article} ${styles.article3} ${
+              clicksCount > 7 ? '' : styles.hidden
+            }`}
           >
             <h2 className={styles.title}>
               3 <br />
@@ -189,7 +204,9 @@ const Home = () => {
           <Link
             href={linksActive ? '/mediar-dano-digital' : ''}
             ref={text4}
-            className={`${styles.article} ${styles.article4} ${styles.hidden}`}
+            className={`${styles.article} ${styles.article4} ${
+              clicksCount > 7 ? '' : styles.hidden
+            }`}
           >
             <h2 className={styles.title}>
               4 <br />
@@ -207,7 +224,9 @@ const Home = () => {
           <Link
             href={linksActive ? '/archivo' : ''}
             ref={text5}
-            className={`${styles.article} ${styles.article5} ${styles.hidden}`}
+            className={`${styles.article} ${styles.article5} ${
+              clicksCount > 7 ? '' : styles.hidden
+            }`}
           >
             <h2 className={styles.title}>
               5 <br />
@@ -225,7 +244,9 @@ const Home = () => {
           <Link
             href={linksActive ? '/residuos-sonicos' : ''}
             ref={text6}
-            className={`${styles.article} ${styles.article6} ${styles.hidden}`}
+            className={`${styles.article} ${styles.article6} ${
+              clicksCount > 7 ? '' : styles.hidden
+            }`}
           >
             <h2 className={styles.title}>
               6 <br />
