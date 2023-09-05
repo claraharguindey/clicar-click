@@ -1,0 +1,31 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: hershey;
+  font-size: 16px;
+  @media (min-width: 701px) {
+    flex-direction: row;
+    gap: 20px;
+  }
+}
+
+.menuItem a {
+  color: white;
+}
+
+.nav {
+  display: flex;
+  font-family: hershey;
+  font-size: 16px;
+  justify-content: space-between;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+.counter {
+  padding-left: 20px;
+  @media (min-width: 701px) and (max-width: 1120px) {
+    padding: 0;
+  }
+}

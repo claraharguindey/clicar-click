@@ -1,6 +1,11 @@
+'use client';
+import { useGlobalContext } from "../context/store";
+
 export default function Poeticas() {
+  const { clicksCount, setClicksCount } = useGlobalContext();
+
   return (
-    <section>
+    <section onClick={() => setClicksCount(clicksCount + 1)}>
       <h1>poéticas de lo hipervinculado</h1>
       <article>
         <p>

@@ -1,6 +1,11 @@
+'use client';
+import { useGlobalContext } from "../context/store";
+
 export default function User() {
+  const { clicksCount, setClicksCount } = useGlobalContext();
+
   return (
-    <section>
+    <section onClick={() => setClicksCount(clicksCount + 1)}>
       <h1>el usuario en el museo virtual</h1>
       <article>
         <p>

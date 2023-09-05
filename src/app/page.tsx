@@ -1,16 +1,13 @@
 'use client';
 import styles from './page.module.css';
-import {
-  MouseEventHandler,
-  RefObject,
-  Suspense,
-  useEffect,
-  useState,
-} from 'react';
+import { RefObject, useState } from 'react';
 import { useRef } from 'react';
+import { useGlobalContext } from './context/store';
 
 const Home = () => {
-  const [clicksCount, setClickCount] = useState(0);
+  const [initialClicksCount, setInitialClicksCount] = useState(0);
+  const { clicksCount, setClicksCount } = useGlobalContext();
+
   const container = useRef<HTMLElement>(null);
   const text0 = useRef<HTMLElement>(null);
   const text1 = useRef<HTMLElement>(null);
@@ -57,20 +54,22 @@ const Home = () => {
       container.current.className = `${styles.grid}`;
     }
   };
+
   const onClick = (event: React.MouseEvent) => {
-    const currentClickCount = clicksCount + 1;
+    setClicksCount(clicksCount + 1);
+    const currentClickCount = initialClicksCount + 1;
     const TEXTS_LENGTH = 6;
-    if (clicksCount <= TEXTS_LENGTH) {
-      getMousePosition(event, articles[clicksCount]);
-    } else if (clicksCount > TEXTS_LENGTH) {
+    if (initialClicksCount <= TEXTS_LENGTH) {
+      getMousePosition(event, articles[initialClicksCount]);
+    } else if (initialClicksCount > TEXTS_LENGTH) {
       setGrid();
     }
-    setClickCount(currentClickCount);
+    setInitialClicksCount(currentClickCount);
   };
 
   return (
     <main className={styles.main} onClick={onClick}>
-      {clicksCount < 1 ? (
+      {initialClicksCount < 1 ? (
         <div className={styles.initMessage}>CLICAR</div>
       ) : null}
       <section ref={container}>
@@ -78,9 +77,14 @@ const Home = () => {
           ref={text0}
           className={`${styles.article} ${styles.article0} ${styles.hidden}`}
         >
+          <h2 className={styles.title}>
+            0 <br />
+            <br />
+            Clicar
+          </h2>
+          <p></p>
           <p>
-            Clicar es un seminario de Mediación Cultural Digital comisariado
-            por{' '}
+            Clicar es un seminario de Mediación Cultural Digital comisariado por{' '}
             <a href="https://www.desmusea.com" target="_blanck">
               Desmusea
             </a>{' '}

@@ -1,6 +1,11 @@
+'use client';
+import { useGlobalContext } from "../context/store";
+
 export default function MediarElDano() {
+  const { clicksCount, setClicksCount } = useGlobalContext();
+
   return (
-    <section>
+    <section onClick={() => setClicksCount(clicksCount + 1)}>
       <h1>mediar el daño digital</h1>
       <article>
         <p>

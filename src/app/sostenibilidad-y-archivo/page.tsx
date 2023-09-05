@@ -1,6 +1,12 @@
+'use client';
+
+import { useGlobalContext } from '../context/store';
+
 export default function Archivo() {
+  const { clicksCount, setClicksCount } = useGlobalContext();
+
   return (
-    <section>
+    <section onClick={() => setClicksCount(clicksCount + 1)}>
       <h1>sostenibilidad y archivo</h1>
       <article>
         <p>
