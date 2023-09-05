@@ -4,9 +4,9 @@
 
 .main {
   position: relative;
-  font-family: hershey;
   height: 100%;
   width: 100%;
+  font-family: suisse;
 }
 
 .initMessage {
@@ -22,11 +22,10 @@
 }
 
 .article {
-  font-family: hershey;
   position: absolute;
   width: 30%;
-  font-size: 18px;
-  text-align: center;
+  font-size: 14px;
+  text-align: left;
   text-justify: inter-word;
 }
 

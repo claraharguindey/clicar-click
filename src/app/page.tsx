@@ -102,13 +102,13 @@ const Home = () => {
             <br />
             Poéticas de lo hipervinculado
           </h2>
-          <p>
+          {/* <p>
             {' '}
             Poéticas de lo hipervinculado pretende mostrar las posibilidades y
             poéticas de lo que entendemos como mediación cultural digital:
             prácticas de intermediación entre arte y públicos a través de una
             tecnología que funciona como medio, y no como fin.
-          </p>
+          </p> */}
         </article>
         <article
           ref={text2}
@@ -119,12 +119,12 @@ const Home = () => {
             <br />
             El usuario en el museo digital
           </h2>
-          <p>
+          {/* <p>
             En este encuentro con Elena Villaespesa significamos cómo, a la hora
             de articular proyectos de mediación digital, resulta importante
             personalizar a la persona que está al otro lado de la pantalla para
             facilitar la interacción con nuestra propuesta.
-          </p>
+          </p> */}
         </article>
         <article
           ref={text3}
@@ -135,13 +135,13 @@ const Home = () => {
             <br />
             Virtual infrastructour
           </h2>
-          <p>
+          {/* <p>
             Virtual Infrastructour, un itinerario digital realizado por Mario
             Santamaría, nos revela cómo la mediación cultural digital nos sirve
             como herramienta para transparentar el museo, percatarnos de su
             funcionamiento interno, y cuestionarlo desde otros espacios de
             pensamiento crítico.
-          </p>
+          </p> */}
         </article>
         <article
           ref={text4}
@@ -152,12 +152,12 @@ const Home = () => {
             <br />
             Mediar el daño digital
           </h2>
-          <p>
+          {/* <p>
             Entendiendo el museo como un espacio en crisis continua, amenazado
             por el daño, Ontologías Feministas nos propone abordar lo digital
             como un espacio poético para plantear esta cuestión y encontrar
             fórmulas de alivio y reparación.
-          </p>
+          </p> */}
         </article>
         <article
           ref={text5}
@@ -168,13 +168,13 @@ const Home = () => {
             <br />
             Sostenibilidad y archivo
           </h2>
-          <p>
+          {/* <p>
             La conservadora Gema Grueso nos acompañó a reflexionar sobre la
             conservación de proyectos digitales más allá de la temporalidad
             inmediata, sobre la importancia del archivo en un contexto de
             producción inmaterial, y las herramientas de las que podemos
             disponer para desarrollar nuestros proyectos digitales.
-          </p>
+          </p> */}
         </article>
         <article
           ref={text6}
@@ -185,11 +185,11 @@ const Home = () => {
             <br />
             Residuos sónicos
           </h2>
-          <p>
+          {/* <p>
             En la propuesta Residuos sónicos de Agnes Pe, atravesamos varios
             espacios del museo despertando su sonoridad interna, y con ello,
             dialogando con el edificio y su intrahistoria.
-          </p>
+          </p> */}
         </article>
       </section>
     </main>

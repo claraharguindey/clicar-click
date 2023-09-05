@@ -15,15 +15,19 @@ const links = [
 
 const Navigation = () => {
   const { clicksCount, setClicksCount } = useGlobalContext();
+  const displayNav = clicksCount >= 8;
+
   return (
     <nav className={styles.nav} onClick={() => setClicksCount(clicksCount + 1)}>
-      <ul className={styles.menu}>
-        {links.map(({ label, route }, i) => (
-          <li key={i} className={styles.menuItem}>
-            <Link href={route}>{label}</Link>
-          </li>
-        ))}
-      </ul>
+      {displayNav ? (
+        <ul className={styles.menu}>
+          {links.map(({ label, route }, i) => (
+            <li key={i} className={styles.menuItem}>
+              <Link href={route}>{label}</Link>
+            </li>
+          ))}
+        </ul>
+      ) : null}
       <span className={styles.counter}>Clics: [{clicksCount}]</span>
     </nav>
   );
