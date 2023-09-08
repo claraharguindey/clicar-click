@@ -113,7 +113,7 @@ const Home = () => {
       <section ref={container}>
         {clicksItem.map((click, i) => (
           <span className={`${styles.hidden} ${styles.clic}`} key={i} ref={click}>
-            clic
+            clic 
           </span>
         ))}
         <div className={styles.gridRow}>
