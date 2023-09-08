@@ -66,6 +66,10 @@ article > * + * {
   margin-top: 1em;
 }
 
+a {
+  color: white;
+}
+
 input,
 button,
 textarea,
@@ -88,7 +92,6 @@ body {
 
 .pageSection {
   margin: 20px;
-  margin-top: 40px;
 }
 
 .title {
