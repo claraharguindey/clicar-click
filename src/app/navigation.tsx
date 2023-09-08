@@ -1,6 +1,6 @@
 'use client';
 import Link from 'next/link';
-import styles from './nav.module.css';
+import styles from './navigation.module.css';
 import { useGlobalContext } from './context/store';
 
 const linksInfo = [
@@ -14,8 +14,11 @@ const Navigation = () => {
   const displayNav = clicksCount >= 8;
 
   return (
-    <nav className={styles.nav} onClick={() => setClicksCount(clicksCount + 1)}>
-      {displayNav ? (
+    <header className={styles.header}>
+      <nav
+        className={styles.nav}
+        onClick={() => setClicksCount(clicksCount + 1)}
+      >
         <ul className={styles.menu}>
           {linksInfo.map(({ label, route }, i) => (
             <li key={i} className={styles.menuItem}>
@@ -23,9 +26,9 @@ const Navigation = () => {
             </li>
           ))}
         </ul>
-      ) : null}
-      <span className={styles.counter}>Clics: [{clicksCount}]</span>
-    </nav>
+        <span className={styles.counter}>Clics: [{clicksCount}]</span>
+      </nav>
+    </header>
   );
 };
 

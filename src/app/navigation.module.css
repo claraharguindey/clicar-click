@@ -1,6 +1,8 @@
+.header {
+  height: 40px;
+}
+
 .menu {
-  position: absolute;
-  left: 20px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -24,12 +26,12 @@
   justify-content: space-between;
   padding: 10px;
   text-transform: uppercase;
+  height: 100%;
 }
 
 .counter {
-  position: absolute;
-  right: 20px;
   padding-left: 20px;
+
   @media (min-width: 701px) and (max-width: 1120px) {
     padding: 0;
   }
