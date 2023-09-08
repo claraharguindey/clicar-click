@@ -1,5 +1,5 @@
 'use client';
-
+import Image from 'next/image';
 import Link from 'next/link';
 import { useGlobalContext } from '../context/store';
 
@@ -51,6 +51,43 @@ export default function About() {
           diálogo con la dimensión online de la institució
         </p>
       </article>
+      <div className="rowGridGallery">
+        <div className="columnGridGallery">
+          <Image
+            src="/img/grupo.png"
+            width={200}
+            height={200}
+            className="imageGridGallery"
+            alt="Un grupo de personas en un pasillo del Museo Reina Sofía elevan sus móviles por encima de sus cabezas y miran la pantalla."
+          />
+        </div>
+        <div className="columnGridGallery">
+          <Image
+            src="/img/grupo.png"
+            width={200}
+            height={200}
+            className="imageGridGallery"
+            alt="Un grupo de personas en un pasillo del Museo Reina Sofía elevan sus móviles por encima de sus cabezas y miran la pantalla."
+          />
+        </div>
+        <div className="columnGridGallery">
+          <Image
+            src="/img/grupo.png"
+            width={200}
+            height={200}
+            className="imageGridGallery"
+            alt="Un grupo de personas en un pasillo del Museo Reina Sofía elevan sus móviles por encima de sus cabezas y miran la pantalla."
+          />
+          <div className="spaceGridGallery"></div>
+          <Image
+            src="/img/grupo.png"
+            width={200}
+            height={200}
+            className="imageGridGallery"
+            alt="Un grupo de personas en un pasillo del Museo Reina Sofía elevan sus móviles por encima de sus cabezas y miran la pantalla."
+          />
+        </div>
+      </div>
     </section>
   );
 }

@@ -1,13 +1,17 @@
 'use client';
 
+import Image from 'next/image';
 import { useGlobalContext } from '../context/store';
 
 export default function MediarElDano() {
   const { clicksCount, setClicksCount } = useGlobalContext();
 
   return (
-    <section className="pageSection" onClick={() => setClicksCount(clicksCount + 1)}>
-      <h1 className="title">mediar el dano digital</h1>
+    <section
+      className="pageSection"
+      onClick={() => setClicksCount(clicksCount + 1)}
+    >
+        <h1 className="title">mediar el dano digital</h1>
       <article className="article">
         <p>
           <b>
@@ -67,6 +71,43 @@ export default function MediarElDano() {
           Hemos trasladado el vínculo al hipervínculo.
         </p>
       </article>
+      <div className="rowGridGallery">
+        <div className="columnGridGallery">
+          <Image
+            src="/img/grupo.png"
+            width={200}
+            height={200}
+            className="imageGridGallery"
+            alt="Un grupo de personas en un pasillo del Museo Reina Sofía elevan sus móviles por encima de sus cabezas y miran la pantalla."
+          />
+        </div>
+        <div className="columnGridGallery">
+          <Image
+            src="/img/grupo.png"
+            width={200}
+            height={200}
+            className="imageGridGallery"
+            alt="Un grupo de personas en un pasillo del Museo Reina Sofía elevan sus móviles por encima de sus cabezas y miran la pantalla."
+          />
+        </div>
+        <div className="columnGridGallery">
+          <Image
+            src="/img/grupo.png"
+            width={200}
+            height={200}
+            className="imageGridGallery"
+            alt="Un grupo de personas en un pasillo del Museo Reina Sofía elevan sus móviles por encima de sus cabezas y miran la pantalla."
+          />
+          <div className="spaceGridGallery"></div>
+          <Image
+            src="/img/grupo.png"
+            width={200}
+            height={200}
+            className="imageGridGallery"
+            alt="Un grupo de personas en un pasillo del Museo Reina Sofía elevan sus móviles por encima de sus cabezas y miran la pantalla."
+          />
+        </div>
+      </div>
     </section>
   );
 }

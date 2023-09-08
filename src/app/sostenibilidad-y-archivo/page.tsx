@@ -1,6 +1,7 @@
 'use client';
 
 import { useGlobalContext } from '../context/store';
+import Image from 'next/image';
 
 export default function Archivo() {
   const { clicksCount, setClicksCount } = useGlobalContext();
@@ -70,6 +71,43 @@ export default function Archivo() {
           Hemos trasladado el vínculo al hipervínculo.
         </p>
       </article>
+      <div className="rowGridGallery">
+        <div className="columnGridGallery">
+          <Image
+            src="/img/grupo.png"
+            width={200}
+            height={200}
+            className="imageGridGallery"
+            alt="Un grupo de personas en un pasillo del Museo Reina Sofía elevan sus móviles por encima de sus cabezas y miran la pantalla."
+          />
+        </div>
+        <div className="columnGridGallery">
+          <Image
+            src="/img/grupo.png"
+            width={200}
+            height={200}
+            className="imageGridGallery"
+            alt="Un grupo de personas en un pasillo del Museo Reina Sofía elevan sus móviles por encima de sus cabezas y miran la pantalla."
+          />
+        </div>
+        <div className="columnGridGallery">
+          <Image
+            src="/img/grupo.png"
+            width={200}
+            height={200}
+            className="imageGridGallery"
+            alt="Un grupo de personas en un pasillo del Museo Reina Sofía elevan sus móviles por encima de sus cabezas y miran la pantalla."
+          />
+          <div className="spaceGridGallery"></div>
+          <Image
+            src="/img/grupo.png"
+            width={200}
+            height={200}
+            className="imageGridGallery"
+            alt="Un grupo de personas en un pasillo del Museo Reina Sofía elevan sus móviles por encima de sus cabezas y miran la pantalla."
+          />
+        </div>
+      </div>
     </section>
   );
 }
