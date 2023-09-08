@@ -12,7 +12,7 @@ const Home = () => {
   const { clicksCount, setClicksCount } = useGlobalContext();
 
   const container = useRef<HTMLAnchorElement>(null);
-  const text0 = useRef<HTMLAnchorElement>(null);
+  const text0 = useRef<HTMLDivElement>(null);
   const text1 = useRef<HTMLAnchorElement>(null);
   const text2 = useRef<HTMLAnchorElement>(null);
   const text3 = useRef<HTMLAnchorElement>(null);
@@ -82,12 +82,12 @@ const Home = () => {
     }
   };
 
-  useEffect(() => {
-    if (clicksCount > 7) {
-      setGrid();
-      setLinksActive(true);
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (clicksCount > 7) {
+  //     setGrid();
+  //     setLinksActive(true);
+  //   }
+  // }, []);
 
   const onClick = (event: React.MouseEvent) => {
     setClicksCount(clicksCount + 1);
@@ -108,29 +108,23 @@ const Home = () => {
 
   return (
     <main className={styles.main} onClick={onClick}>
-      {initialClicksCount < 1 && clicksCount < 7 ? (
-        <div className={styles.initMessage}>CLICAR</div>
-      ) : null}
+      <div className={styles.initMessage}>CLICAR</div>
       <section ref={container}>
         {clicksItem.map((click, i) => (
           <span className={styles.hidden} key={i} ref={click}>
             clic
           </span>
         ))}
-        <Link
-          href={linksActive ? '/' : ''}
+        <div
           ref={text0}
-          className={`${styles.article} ${styles.article0} ${
-            clicksCount > 7 ? '' : styles.hidden
-          } ${styles.firstArticle}`}
+          className={`${styles.article} ${styles.article0} ${styles.hidden} ${styles.firstArticle}`}
         >
           <h2 className={styles.title}>
             0 <br />
             <br />
             Clicar
           </h2>
-          <p></p>
-          <p>
+          <div>
             Clicar es un seminario de Mediación Cultural Digital comisariado por{' '}
             <a href="https://www.desmusea.com" target="_blanck">
               Desmusea
@@ -138,15 +132,13 @@ const Home = () => {
             que formó parte del programa <i>Caminar, clicar, desplazar </i>
             impulsado por el Departamento de Educación del Museo Nacional Centro
             de Arte Reina Sofía durante los meses de *** a *** de 2022.
-          </p>
-        </Link>
+          </div>
+        </div>
         <div className={styles.gridRow}>
           <Link
             href={linksActive ? '/poeticas' : ''}
             ref={text1}
-            className={`${styles.article} ${styles.article1} ${
-              clicksCount > 7 ? '' : styles.hidden
-            }`}
+            className={`${styles.article} ${styles.article1} ${styles.hidden}`}
           >
             <h2 className={styles.title}>
               1 <br />
@@ -164,9 +156,7 @@ const Home = () => {
           <Link
             href={linksActive ? '/user' : ''}
             ref={text2}
-            className={`${styles.article} ${styles.article2} ${
-              clicksCount > 7 ? '' : styles.hidden
-            }`}
+            className={`${styles.article} ${styles.article2} ${styles.hidden}`}
           >
             <h2 className={styles.title}>
               2 <br />
@@ -184,9 +174,7 @@ const Home = () => {
           <Link
             href={linksActive ? '/virtual-infrastructour' : ''}
             ref={text3}
-            className={`${styles.article} ${styles.article3} ${
-              clicksCount > 7 ? '' : styles.hidden
-            }`}
+            className={`${styles.article} ${styles.article3} ${styles.hidden}`}
           >
             <h2 className={styles.title}>
               3 <br />
@@ -204,9 +192,7 @@ const Home = () => {
           <Link
             href={linksActive ? '/mediar-dano-digital' : ''}
             ref={text4}
-            className={`${styles.article} ${styles.article4} ${
-              clicksCount > 7 ? '' : styles.hidden
-            }`}
+            className={`${styles.article} ${styles.article4} ${styles.hidden}`}
           >
             <h2 className={styles.title}>
               4 <br />
@@ -224,9 +210,7 @@ const Home = () => {
           <Link
             href={linksActive ? '/archivo' : ''}
             ref={text5}
-            className={`${styles.article} ${styles.article5} ${
-              clicksCount > 7 ? '' : styles.hidden
-            }`}
+            className={`${styles.article} ${styles.article5} ${styles.hidden}`}
           >
             <h2 className={styles.title}>
               5 <br />
@@ -244,9 +228,7 @@ const Home = () => {
           <Link
             href={linksActive ? '/residuos-sonicos' : ''}
             ref={text6}
-            className={`${styles.article} ${styles.article6} ${
-              clicksCount > 7 ? '' : styles.hidden
-            }`}
+            className={`${styles.article} ${styles.article6} ${styles.hidden}`}
           >
             <h2 className={styles.title}>
               6 <br />
