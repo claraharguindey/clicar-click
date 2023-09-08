@@ -139,7 +139,7 @@ const Home = () => {
               </a>{' '}
               que formó parte del programa <i>Caminar, clicar, desplazar </i>
               impulsado por el Departamento de Educación del Museo Nacional
-              Centro de Arte Reina Sofía durante los meses de *** a *** de 2022.
+              Centro de Arte Reina Sofía durante los meses de mayo a septiembre de 2022.
             </div>
           </div>
         </div>
@@ -147,7 +147,9 @@ const Home = () => {
           <Link
             href={linksActive ? '/poeticas' : ''}
             ref={text1}
-            className={`${styles.article} ${styles.hidden}`}
+            className={`${styles.article} ${
+              clicksCount > 7 ? '' : styles.hidden
+            }`}
           >
             <h2 className={styles.title}>
               [1] <br />
