@@ -1,5 +1,6 @@
 .header {
   height: 40px;
+  position: relative;
 }
 
 .menu {
@@ -19,6 +20,10 @@
   color: white;
 }
 
+.menuItem:hover {
+  opacity: 0.8;
+}
+
 .nav {
   display: flex;
   font-family: hershey;
@@ -31,7 +36,8 @@
 
 .counter {
   padding-left: 20px;
-
+  position: absolute;
+  right: 10px;
   @media (min-width: 701px) and (max-width: 1120px) {
     padding: 0;
   }

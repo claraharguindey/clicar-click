@@ -1,8 +1,10 @@
 .main {
   position: relative;
-  height: 100%;
+  height: calc(100% - 40px);
   width: 100%;
   font-family: suisse;
+  display: flex;
+  align-items: flex-end;
 }
 
 .initMessage {
@@ -21,17 +23,20 @@
   position: absolute;
   width: 30%;
   font-size: 14px;
-  text-justify: inter-word;
   color: white;
   text-decoration: none;
+}
+
+.article:hover {
+  opacity: 0.8;
 }
 
 .grid {
   display: flex;
   flex-direction: column;
-  margin: 20px;
-  margin-top: 40px;
+  padding: 20px;
   animation: fade 1s ease 0s 1 normal forwards;
+  gap: 20px;
 
   & .gridRow {
     display: flex;
@@ -48,7 +53,7 @@
 
 .grid .article {
   position: static !important;
-  width: 15%;
+  max-width: 15%;
 }
 
 .title {
@@ -62,6 +67,7 @@
 .image {
   object-fit: cover;
   border: 1px solid white;
+  width: 100% !important;
 }
 
 @keyframes fade {

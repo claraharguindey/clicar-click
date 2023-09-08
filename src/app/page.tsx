@@ -82,12 +82,12 @@ const Home = () => {
     }
   };
 
-  // useEffect(() => {
-  //   if (clicksCount > 7) {
-  //     setGrid();
-  //     setLinksActive(true);
-  //   }
-  // }, []);
+  useEffect(() => {
+    if (clicksCount > 7) {
+      setGrid();
+      setLinksActive(true);
+    }
+  }, []);
 
   const onClick = (event: React.MouseEvent) => {
     setClicksCount(clicksCount + 1);
@@ -108,40 +108,49 @@ const Home = () => {
 
   return (
     <main className={styles.main} onClick={onClick}>
-      <div className={styles.initMessage}>CLICAR</div>
+      {clicksCount < 1 ? (
+        <div className={styles.initMessage}>CLICAR</div>
+      ) : null}
       <section ref={container}>
         {clicksItem.map((click, i) => (
           <span className={styles.hidden} key={i} ref={click}>
             clic
           </span>
         ))}
-        <div
-          ref={text0}
-          className={`${styles.article} ${styles.article0} ${styles.hidden} ${styles.firstArticle}`}
-        >
-          <h2 className={styles.title}>
-            0 <br />
-            <br />
-            Clicar
-          </h2>
-          <div>
-            Clicar es un seminario de Mediación Cultural Digital comisariado por{' '}
-            <a href="https://www.desmusea.com" target="_blanck">
-              Desmusea
-            </a>{' '}
-            que formó parte del programa <i>Caminar, clicar, desplazar </i>
-            impulsado por el Departamento de Educación del Museo Nacional Centro
-            de Arte Reina Sofía durante los meses de *** a *** de 2022.
+        <div className={styles.gridRow}>
+          <div
+            ref={text0}
+            className={`${styles.article} ${
+              clicksCount > 7 ? '' : styles.hidden
+            } ${styles.firstArticle}`}
+          >
+            {clicksCount < 7 && (
+              <h2 className={styles.title}>
+                0 <br />
+                <br />
+                Clicar
+              </h2>
+            )}
+            <div>
+              Clicar es un seminario de Mediación Cultural Digital comisariado
+              por{' '}
+              <a href="https://www.desmusea.com" target="_blanck">
+                Desmusea
+              </a>{' '}
+              que formó parte del programa <i>Caminar, clicar, desplazar </i>
+              impulsado por el Departamento de Educación del Museo Nacional
+              Centro de Arte Reina Sofía durante los meses de *** a *** de 2022.
+            </div>
           </div>
         </div>
         <div className={styles.gridRow}>
           <Link
             href={linksActive ? '/poeticas' : ''}
             ref={text1}
-            className={`${styles.article} ${styles.article1} ${styles.hidden}`}
+            className={`${styles.article} ${styles.hidden}`}
           >
             <h2 className={styles.title}>
-              1 <br />
+              [1] <br />
               <br />
               Poéticas de lo hipervinculado
             </h2>
@@ -156,10 +165,12 @@ const Home = () => {
           <Link
             href={linksActive ? '/user' : ''}
             ref={text2}
-            className={`${styles.article} ${styles.article2} ${styles.hidden}`}
+            className={`${styles.article} ${
+              clicksCount > 7 ? '' : styles.hidden
+            }`}
           >
             <h2 className={styles.title}>
-              2 <br />
+              [2] <br />
               <br />
               El usuario en el museo digital
             </h2>
@@ -174,10 +185,12 @@ const Home = () => {
           <Link
             href={linksActive ? '/virtual-infrastructour' : ''}
             ref={text3}
-            className={`${styles.article} ${styles.article3} ${styles.hidden}`}
+            className={`${styles.article}  ${
+              clicksCount > 7 ? '' : styles.hidden
+            }`}
           >
             <h2 className={styles.title}>
-              3 <br />
+              [3] <br />
               <br />
               Virtual infrastructour
             </h2>
@@ -192,10 +205,12 @@ const Home = () => {
           <Link
             href={linksActive ? '/mediar-dano-digital' : ''}
             ref={text4}
-            className={`${styles.article} ${styles.article4} ${styles.hidden}`}
+            className={`${styles.article} ${
+              clicksCount > 7 ? '' : styles.hidden
+            }`}
           >
             <h2 className={styles.title}>
-              4 <br />
+              [4] <br />
               <br />
               Mediar el dano digital
             </h2>
@@ -210,10 +225,12 @@ const Home = () => {
           <Link
             href={linksActive ? '/archivo' : ''}
             ref={text5}
-            className={`${styles.article} ${styles.article5} ${styles.hidden}`}
+            className={`${styles.article}  ${
+              clicksCount > 7 ? '' : styles.hidden
+            }`}
           >
             <h2 className={styles.title}>
-              5 <br />
+              [5] <br />
               <br />
               Sostenibilidad y archivo
             </h2>
@@ -228,10 +245,12 @@ const Home = () => {
           <Link
             href={linksActive ? '/residuos-sonicos' : ''}
             ref={text6}
-            className={`${styles.article} ${styles.article6} ${styles.hidden}`}
+            className={`${styles.article} ${
+              clicksCount > 7 ? '' : styles.hidden
+            }`}
           >
             <h2 className={styles.title}>
-              6 <br />
+              [6] <br />
               <br />
               Residuos sónicos
             </h2>

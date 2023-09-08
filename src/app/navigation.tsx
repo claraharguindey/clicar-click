@@ -19,13 +19,15 @@ const Navigation = () => {
         className={styles.nav}
         onClick={() => setClicksCount(clicksCount + 1)}
       >
-        <ul className={styles.menu}>
-          {linksInfo.map(({ label, route }, i) => (
-            <li key={i} className={styles.menuItem}>
-              <Link href={route}>{label}</Link>
-            </li>
-          ))}
-        </ul>
+        {displayNav && (
+          <ul className={styles.menu}>
+            {linksInfo.map(({ label, route }, i) => (
+              <li key={i} className={styles.menuItem}>
+                <Link href={route}>{label}</Link>
+              </li>
+            ))}
+          </ul>
+        )}
         <span className={styles.counter}>Clics: [{clicksCount}]</span>
       </nav>
     </header>
