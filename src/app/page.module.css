@@ -3,8 +3,6 @@
   height: calc(100% - 40px);
   width: 100%;
   font-family: suisse;
-  display: flex;
-  align-items: flex-end;
 }
 
 .initMessage {
@@ -37,10 +35,10 @@
   padding: 20px;
   animation: fade 1s ease 0s 1 normal forwards;
   gap: 20px;
+  height: 100%;
+  min-height: 100%;
 
   & .gridRow {
-    display: flex;
-    flex-wrap: wrap;
     gap: 14px;
     padding-top: 20px;
   }
@@ -53,7 +51,8 @@
 
 .grid .article {
   position: static !important;
-  max-width: 15%;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 .title {
@@ -61,7 +60,7 @@
   font-family: hershey;
   text-transform: uppercase;
   font-weight: 300;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .image {
@@ -77,5 +76,41 @@
 
   100% {
     opacity: 1;
+  }
+}
+
+.clic {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .clic {
+    display: inline-block;
+  }
+
+  .gridRow {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .article {
+    max-width: 30%;
+    margin-bottom: 0;
+  }
+
+  .title {
+    height: 100px;
+    padding-bottom: 20px;
+  }
+
+  .main {
+    display: flex;
+    align-items: flex-end;
+  }
+}
+
+@media (min-width: 1024px) {
+  .article {
+    max-width: 15%;
   }
 }

@@ -93,6 +93,7 @@ body {
 .pageSection {
   margin: 20px;
   display: flex;
+  flex-direction: column;
   gap: 20px;
 }
 
@@ -107,7 +108,6 @@ body {
 .article {
   font-size: 14px;
   font-family: suisse;
-  max-width: 50%;
   text-align: justify;
 }
 
@@ -117,7 +117,6 @@ body {
   padding: 0 4px;
 }
 
-/* Create four equal columns that sits next to each other */
 .columnGridGallery {
   flex: 25%;
   max-width: 25%;
@@ -131,7 +130,9 @@ body {
   object-fit: cover;
   border: 1px solid white;
 }
+
 .spaceGridGallery {
+  display: none;
   margin-top: 8px;
   vertical-align: middle;
   width: 100%;
@@ -139,8 +140,6 @@ body {
   object-fit: cover;
 }
 
-
-/* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
   .columnGridGallery {
     flex: 50%;
@@ -148,10 +147,23 @@ body {
   }
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .columnGridGallery {
     flex: 100%;
     max-width: 100%;
+  }
+}
+
+@media (min-width: 600px) {
+  .pageSection {
+    flex-direction: row;
+  }
+
+  .article {
+    max-width: 50%;
+  }
+
+  .spaceGridGallery {
+    display: block;
   }
 }

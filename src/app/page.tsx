@@ -72,7 +72,6 @@ const Home = () => {
       clickItem.current.style.position = 'absolute';
       clickItem.current.style.left = `${posx}px`;
       clickItem.current.style.top = `${posy - 20}px`;
-      clickItem.current.style.display = 'block';
     }
   };
 
@@ -113,7 +112,7 @@ const Home = () => {
       ) : null}
       <section ref={container}>
         {clicksItem.map((click, i) => (
-          <span className={styles.hidden} key={i} ref={click}>
+          <span className={`${styles.hidden} ${styles.clic}`} key={i} ref={click}>
             clic
           </span>
         ))}
