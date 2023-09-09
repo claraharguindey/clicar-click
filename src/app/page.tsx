@@ -72,6 +72,8 @@ const Home = () => {
       clickItem.current.style.position = 'absolute';
       clickItem.current.style.left = `${posx}px`;
       clickItem.current.style.top = `${posy - 20}px`;
+      clickItem.current.style.display = 'block';
+
     }
   };
 

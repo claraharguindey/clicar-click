@@ -84,10 +84,6 @@
 }
 
 @media (min-width: 600px) {
-  .clic {
-    display: inline-block;
-  }
-
   .gridRow {
     display: flex;
     flex-wrap: wrap;
