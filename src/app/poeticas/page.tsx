@@ -15,30 +15,30 @@ export default function Poeticas() {
       <article className="article">
         <p>
           <b>
-            <i>Poéticas de lo hipervinculado</i> pretende mostrar las
-            posibilidades y poéticas de lo que entendemos como mediación
-            cultural digital: prácticas de intermediación entre arte y públicos
-            a través de una tecnología que funciona como medio, y no como fin.
+            <i>Poéticas de lo hipervinculado</i> funcionó como presentación
+            introductoria de las posibilidades y poéticas de lo que entendemos
+            como mediación cultural digital: prácticas de intermediación entre
+            arte y públicos a través de una tecnología que funciona como medio,
+            y no como fin. Esta sesión tomó forma de recorrido por el Museo.
           </b>
         </p>
         <p>
           Entendiendo la mediación cultural como un territorio intermedio entre
-          obras y públicos donde ocurre un cuestionamiento, aprendizaje o
-          transmisión de conocimiento, la mediación cultural digital trata de
-          expandir este lugar mediante las posibilidades que nos presta la
-          tecnología.
+          obras y públicos, la mediación cultural digital trata de expandir y
+          explorar este intersticio por medio de la tecnología.
         </p>
         <p>
-          Sin embargo, en ocasiones las instituciones culturales hacen uso de la
-          tecnología como fin y no como medio de encuentro genuino con el
-          conocimiento. Por ejemplo una audioguía al uso, con datos sobre la
-          fecha, características y vida del autor de la obra, no ofrece una
-          experiencia enriquecida frente a la explicación que nos aportaría una
-          guía humana. Entenderíamos mediación digital cuando aprovecha la
-          potencia de este medio para ofrecer un contenido expandido: en el
-          recorrido, conectamos el Guernica con audios de una mujer que vivió el
-          bombardeo de pequeña, y con las emociones personales que nos provocó
-          su testimonio.
+          En ocasiones las instituciones culturales hacen uso de la tecnología
+          como fin y no como medio de encuentro genuino con el conocimiento. Si
+          la primera tecnología utilizada en el museo con esta intnción es la
+          audioguía, ¿de qué modo esta nos ofrece una experiencia enriquecida
+          frente a la explicación que nos aportaría una guía humana? La
+          mediación digital buscar aprovechar la potencia de este medio para
+          ofrecer un contenido expandido: en el recorrido, visitamos el Guernica
+          bajo la escucha del testimonio de una mujer que vivió el bombardeo de
+          niña, audios de Whatsapp donde relatábamos los sentires que nos
+          provocó su testimonio y otras experiencias de mediación que habían
+          puesto esta experiencia en el centro.
         </p>
         <p>
           El recorrido también reivindicó el cuerpo desde lo digital a través de
@@ -74,7 +74,7 @@ export default function Poeticas() {
       <div className="rowGridGallery">
         <div className="columnGridGallery">
           <Image
-            src="/img/grupo.png"
+            src="/img/guernica.jpg"
             width={200}
             height={200}
             className="imageGridGallery"
@@ -92,7 +92,14 @@ export default function Poeticas() {
         </div>
         <div className="columnGridGallery">
           <Image
-            src="/img/grupo.png"
+            src="/img/calder.jpg"
+            width={200}
+            height={200}
+            className="imageGridGallery"
+            alt="Un grupo de personas en un pasillo del Museo Reina Sofía elevan sus móviles por encima de sus cabezas y miran la pantalla."
+          />
+            <Image
+            src="/img/senor.jpg"
             width={200}
             height={200}
             className="imageGridGallery"
@@ -100,7 +107,7 @@ export default function Poeticas() {
           />
           <div className="spaceGridGallery"></div>
           <Image
-            src="/img/grupo.png"
+            src="/img/mireia.jpg"
             width={200}
             height={200}
             className="imageGridGallery"

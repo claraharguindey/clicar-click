@@ -6,8 +6,7 @@
 .menu {
   display: flex;
   gap: 10px;
-  font-family: hershey;
-  font-size: 16px;
+  font-size: 14px;
   animation: fade 1s ease 0s 1 normal forwards;
 }
 
@@ -21,8 +20,7 @@
 
 .nav {
   display: flex;
-  font-family: hershey;
-  font-size: 16px;
+  font-size: 14px;
   justify-content: space-between;
   padding: 20px;
   text-transform: uppercase;

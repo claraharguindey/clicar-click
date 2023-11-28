@@ -30,25 +30,18 @@ export default function About() {
           la mediación cultural.
           <br />
           <br />
-          Los museos y las instituciones culturales son parte de un contexto
-          cada vez más atravesado por la virtualidad, en el que la producción y
-          el consumo de arte se han ido desplazando a los espacios web y en el
-          que las utopías del metaverso ya están presentes y son totalmente
-          inmediatas. Nuevas prácticas de mediación cultural, imbricadas en lo
-          rizomático, lo interconectado y lo digital, han ido tomando progresiva
-          fuerza en el territorio museístico, articulando nuevos vínculos entre
-          las propuestas artísticas y la ciudadanía.
+          En un contexto en el que las instituciones culturales se encuentran
+          cada vez más atravesadas por la virtualidad, Clicar pretendió definir
+          un marco general en torno a la mediación cultural digital – aquellas
+          prácticas de mediación que hacen uso de la tecnología formal o
+          conceptualmente. Clicar se articuló a través de encuentros de
+          pensamiento y acciones específicas que ampliasen las posibilidades
+          <i>poéticas y políticas</i> que se abren ante el diálogo con la
+          dimensión online de la institución.
           <br /> <br />
-          Este nodo pretendió configurar un marco general en torno a la
-          mediación cultural digital, entendida como ejercicio de intermediación
-          artística que ubica el pensamiento tecnológico en el centro. Busca no
-          solo ofrecer un contexto teórico (que aterrice el concepto de
-          mediación cultural digital, la cuestión de los públicos en la
-          virtualidad y la conservación y archivo de estas prácticas), sino
-          también constituir un ejercicio propositivo que transforme estas ideas
-          en acciones específicas, ofreciendo una imagen prismática de
-          diferentes posibilidades poéticas y políticas que se abren ante el
-          diálogo con la dimensión online de la institució
+          Clicar tuvo lugar entre mayo y septiembre de 2022 contando con Elena
+          Villaespesa, Gema Grueso, Mario Santamaría, Ontologías Feministas y
+          Agnès Pe.
         </p>
       </article>
       <div className="rowGridGallery">

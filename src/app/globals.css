@@ -26,30 +26,9 @@ dd {
   margin: 0;
 }
 
-@font-face {
-  font-family: suisse;
-  src: url('/suisse.woff');
-}
-
-@font-face {
-  font-family: dotgothic16;
-  src: url('/DotGothic16-Regular.ttf');
-}
-
-@font-face {
-  font-family: screenfont;
-  src: url('/screenfont.woff2');
-}
-
-@font-face {
-  font-family: hershey;
-  src: url('/Hershey-Noailles-Futura-Duplex-Regular.woff2');
-}
-
 body {
   background: black;
   color: white;
-  font-family: hershey;
   min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
@@ -98,16 +77,14 @@ body {
 }
 
 .title {
-  font-size: 16px;
-  font-family: hershey;
+  font-size: 14px;
   text-transform: uppercase;
   font-weight: 300;
   padding-bottom: 20px;
 }
 
 .article {
-  font-size: 14px;
-  font-family: suisse;
+  font-size: 16px;
   text-align: justify;
 }
 
@@ -118,8 +95,8 @@ body {
 }
 
 .columnGridGallery {
-  flex: 25%;
-  max-width: 25%;
+  flex: 30%;
+  max-width: 30%;
   padding: 0 4px;
 }
 
@@ -157,10 +134,11 @@ body {
 @media (min-width: 600px) {
   .pageSection {
     flex-direction: row;
+    justify-content: space-between;
   }
 
   .article {
-    max-width: 50%;
+    max-width: 30%;
   }
 
   .spaceGridGallery {
