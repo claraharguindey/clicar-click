@@ -29,7 +29,8 @@ export default function About() {
           (coordinado por La Liminal), <i>clicar</i>, y <i>desplazar</i>{" "}
           (coordinado por Felipa Manuela) la propuesta pretendía analizar
           diferentes acercamientos contemporáneos a la mediación cultural.
-          <br></br>
+        </p>
+        <p>
           Los museos y las instituciones culturales son parte de un contexto
           cada vez más atravesado por la virtualidad, en el que la producción y
           el consumo de arte se han ido desplazando a los espacios online, y en
@@ -38,12 +39,14 @@ export default function About() {
           lógicas rizomáticas, interconectadas y digitales, han ido tomando
           progresiva fuerza en el territorio museístico, articulando nuevos
           vínculos entre las propuestas artísticas y la ciudadanía.
-          <br></br>
+        </p>
+        <p>
           Este nodo pretendió configurar un marco general en torno a la{" "}
           <b>mediación cultural digital</b>, entendiendo por ello aquellas
           prácticas de mediación donde el uso de la tecnología es definitoria en
           el diseño y ejecución de la propuesta.
-          <br></br>
+        </p>
+        <p>
           Buscó no sólo delinear un contexto teórico (que aterrizara el concepto
           de mediación cultural digital, la cuestión de los públicos en la
           virtualidad, y la conservación y archivo de estas prácticas), sino
