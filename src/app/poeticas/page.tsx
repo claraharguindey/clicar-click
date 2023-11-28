@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import Image from 'next/image';
-import { useGlobalContext } from '../context/store';
+import Image from "next/image";
+import { useGlobalContext } from "../context/store";
 
 export default function Poeticas() {
   const { clicksCount, setClicksCount } = useGlobalContext();
@@ -14,61 +14,52 @@ export default function Poeticas() {
       <h1 className="title">poéticas de lo hipervinculado</h1>
       <article className="article">
         <p>
-          <b>
-            <i>Poéticas de lo hipervinculado</i> funcionó como presentación
-            introductoria de las posibilidades y poéticas de lo que entendemos
-            como mediación cultural digital: prácticas de intermediación entre
-            arte y públicos a través de una tecnología que funciona como medio,
-            y no como fin. Esta sesión tomó forma de recorrido por el Museo.
-          </b>
-        </p>
-        <p>
-          Entendiendo la mediación cultural como un territorio intermedio entre
-          obras y públicos, la mediación cultural digital trata de expandir y
-          explorar este intersticio por medio de la tecnología.
-        </p>
-        <p>
-          En ocasiones las instituciones culturales hacen uso de la tecnología
-          como fin y no como medio de encuentro genuino con el conocimiento. Si
-          la primera tecnología utilizada en el museo con esta intnción es la
-          audioguía, ¿de qué modo esta nos ofrece una experiencia enriquecida
-          frente a la explicación que nos aportaría una guía humana? La
-          mediación digital buscar aprovechar la potencia de este medio para
-          ofrecer un contenido expandido: en el recorrido, visitamos el Guernica
-          bajo la escucha del testimonio de una mujer que vivió el bombardeo de
-          niña, audios de Whatsapp donde relatábamos los sentires que nos
-          provocó su testimonio y otras experiencias de mediación que habían
-          puesto esta experiencia en el centro.
-        </p>
-        <p>
-          El recorrido también reivindicó el cuerpo desde lo digital a través de
-          una coreografía guiada a través del móvil que imitaba los movimientos
-          de Carmen, de Calder; igual que Calder aporta motricidad, juego,
-          transformación a una disciplina basada en la solidez y la firmeza,
-          incorporamos nuestra corporalidad latente y presente al otro lado de
-          la pantalla. Asimismo, pensamos en Konstant y su Nueva Babilonia para
-          preguntarnos cómo serán los museos en el metaverso y el papel de los
-          mediadores culturales como conocedoras de sus matices y posibilidades.
-        </p>
-        <p>
           <i>Poéticas de lo hipervinculado</i> hace referencia directa a
-          <i>Poéticas de lo inacabado</i>, una intervención de Alejandra Riera
-          en el Museo Reina Sofía. En ella, ejecutó una oquedad en una pared que
-          ponía en contacto dos espacios contrapuestos: las bóvedas subterráneas
-          y la entrada del museo. Nos gusta pensar en este gesto como un acto
-          <i> hipervinculante</i>, que pone en común dos lugares del museo
-          ajenos en usos y funciones, pero que de pronto quedan íntima e
-          irreversiblemente conectados.
+          <i>Poéticas de lo inacabado</i> , una intervención que la artista
+          Alejandra Riera llevó a cabo en 2013 en el Museo Reina Sofía. En ella,
+          ejecutó una oquedad en un muro que ponía en contacto dos espacios
+          contrapuestos: las bóvedas subterráneas, y la entrada del museo. Este
+          gesto, que pone en común dos lugares del museo ajenos en usos y
+          funciones y los conecta íntima e irreversiblemente, puede ser leído
+          como un acto <i>hipervinculante</i>.
         </p>
         <p>
-          Esto nos lleva a pensar que las ideas que abrazamos desde la mediación
-          cultural digital, como son atravesar la Colección desde propuestas
-          no-lineales, desde lo rizomático, generando nuevas relaciones que
-          legitiman la experiencia personal de los públicos, en realidad no son
-          tan novedosas, sino que las mediadoras las llevan conociendo y
-          aplicando desde hace años. La tecnología no ha creado una disrupción,
-          sino que ha trasladado y acompañado aprendizajes a un nuevo entorno.
-          Hemos trasladado el vínculo al hipervínculo.
+          <i>Poéticas de lo hipervinculado</i>, como sesión inaugural del
+          seminario, buscó presentar el concepto de mediación cultural digital.
+          Entendiendo la mediación cultural como un territorio intermedio de
+          posibilidad entre obras y públicos, la{" "}
+          <i>mediación cultural digital</i> trata de expandir este lugar
+          haciendo uso de la tecnología y la digitalidad. Esta práctica no se
+          limitaría entonces a pensar en el fin, sino también en el propio
+          medio.
+        </p>
+        <p>
+          De la audioguía como herramienta fundacional a las DAO como escenario
+          futurible, el recorrido buscó dar cuenta de los diferentes medios
+          técnicos de los que la práctica de la mediación se ha servido, y
+          atenuar ciertos aspectos que aún hoy parecen poner distancia entre las
+          mediadoras y el uso de tecnología.
+        </p>
+        <p>
+          Reconectando con el cuerpo tras las pantallas a través de una
+          coreografía que imitaba los movimientos de la escultura <i>Carmen</i>{" "}
+          de Calder; magnetizando la <i>Nueva Babilonia</i> de Konstant con
+          figuraciones sobre cómo serán los museos en el metaverso y el papel de
+          las mediadoras culturales en ese ecosistema; o modificando la
+          apariencia de la página web del <i>Guernica</i> para incorporar
+          ciertos planteamientos del paseo, la propuesta quiso atravesar la
+          Colección desde propuestas no-lineales, rizomáticas, generando nuevas
+          relaciones que legitimasen la experiencia íntima de los públicos.
+          Propuestas, en definitiva, que las mediadoras llevan conociendo y
+          aplicando desde hace años, solo que asumen y habitan la virtualidad y
+          el museo interconectado como un escenario fértil para la
+          experimentación y una poderosa herramienta para la pedagogía crítica y
+          el cambio social a través del arte.
+        </p>
+        <p>
+          La tecnología no ha creado una disrupción, sino que ha trasladado y
+          acompañado aprendizajes a un <i>nuevo</i> entorno. Hemos trasladado el
+          <i>vínculo</i> al <i>hipervínculo</i>.
         </p>
       </article>
       <div className="rowGridGallery">
@@ -98,7 +89,7 @@ export default function Poeticas() {
             className="imageGridGallery"
             alt="Un grupo de personas en un pasillo del Museo Reina Sofía elevan sus móviles por encima de sus cabezas y miran la pantalla."
           />
-            <Image
+          <Image
             src="/img/senor.jpg"
             width={200}
             height={200}
