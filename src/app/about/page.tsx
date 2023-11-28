@@ -1,7 +1,7 @@
-'use client';
-import Image from 'next/image';
-import Link from 'next/link';
-import { useGlobalContext } from '../context/store';
+"use client";
+import Image from "next/image";
+import Link from "next/link";
+import { useGlobalContext } from "../context/store";
 
 export default function About() {
   const { clicksCount, setClicksCount } = useGlobalContext();
@@ -14,34 +14,42 @@ export default function About() {
       <h1 className="title">Clicar</h1>
       <article className="article">
         <p>
-          Clicar fue el seminario sobre mediación cultural digital comisariado
-          por Desmusea y en el que intervinieron diferentes artistas y
-          profesionales cuyo trabajo atraviesa los ámbitos del museo, la
-          mediación y la virtualidad. Clicar que formó parte del programa{' '}
+          <b>Clicar</b> fue el seminario sobre mediación cultural digital
+          comisariado por{" "}
+          <Link href={"https://www.desmusea.com"}>Desmusea</Link> y en el que
+          intervinieron diferentes artistas y profesionales cuyo trabajo
+          atraviesa los ámbitos del museo, la mediación y la virtualidad. Clicar
+          formó parte del programa{" "}
           <Link href="https://www.museoreinasofia.es/actividades/caminar-clicar-desplazar">
+            {" "}
             Caminar, clicar, desplazar…
           </Link>
           , impulsado por el Departamento de Educación del Museo Nacional Centro
-          de Arte Reina Sofía. A partir de los tres verbos: caminar (coordinado
-          por <Link href="https://www.laliminal.com/">La Liminal</Link>),
-          clicar, y desplazar (coordinado por{' '}
-          <Link href="https://felipamanuela.org/">Felipa Manuela</Link>) la
-          propuesta pretendía analizar diferentes acercamientos contemporáneos a
-          la mediación cultural.
-          <br />
-          <br />
-          En un contexto en el que las instituciones culturales se encuentran
-          cada vez más atravesadas por la virtualidad, Clicar pretendió definir
-          un marco general en torno a la mediación cultural digital – aquellas
-          prácticas de mediación que hacen uso de la tecnología formal o
-          conceptualmente. Clicar se articuló a través de encuentros de
-          pensamiento y acciones específicas que ampliasen las posibilidades
-          <i>poéticas y políticas</i> que se abren ante el diálogo con la
-          dimensión online de la institución.
-          <br /> <br />
-          Clicar tuvo lugar entre mayo y septiembre de 2022 contando con Elena
-          Villaespesa, Gema Grueso, Mario Santamaría, Ontologías Feministas y
-          Agnès Pe.
+          de Arte Reina Sofía. A partir de los tres verbos: <i>caminar</i>{" "}
+          (coordinado por La Liminal), <i>clicar</i>, y <i>desplazar</i>{" "}
+          (coordinado por Felipa Manuela) la propuesta pretendía analizar
+          diferentes acercamientos contemporáneos a la mediación cultural.
+          <br></br>
+          Los museos y las instituciones culturales son parte de un contexto
+          cada vez más atravesado por la virtualidad, en el que la producción y
+          el consumo de arte se han ido desplazando a los espacios online, y en
+          el que el imaginario aparentemente utópico del metaverso está cada vez
+          más presente. Nuevas prácticas de mediación cultural, imbricadas en
+          lógicas rizomáticas, interconectadas y digitales, han ido tomando
+          progresiva fuerza en el territorio museístico, articulando nuevos
+          vínculos entre las propuestas artísticas y la ciudadanía.
+          <br></br>
+          Este nodo pretendió configurar un marco general en torno a la{" "}
+          <b>mediación cultural digital</b>, entendiendo por ello aquellas
+          prácticas de mediación donde el uso de la tecnología es definitoria en
+          el diseño y ejecución de la propuesta.
+          <br></br>
+          Buscó no sólo delinear un contexto teórico (que aterrizara el concepto
+          de mediación cultural digital, la cuestión de los públicos en la
+          virtualidad, y la conservación y archivo de estas prácticas), sino
+          también constituir un ejercicio propositivo que transformara estas
+          ideas en acciones específicas, ofreciendo una imagen prismática de las
+          poéticas que se abren ante el diálogo con la institución.
         </p>
       </article>
       <div className="rowGridGallery">

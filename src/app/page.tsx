@@ -1,10 +1,10 @@
-'use client';
-import styles from './page.module.css';
-import { RefObject, useState, useEffect } from 'react';
-import { useRef } from 'react';
-import Image from 'next/image';
-import { useGlobalContext } from './context/store';
-import Link from 'next/link';
+"use client";
+import styles from "./page.module.css";
+import { RefObject, useState, useEffect } from "react";
+import { useRef } from "react";
+import Image from "next/image";
+import { useGlobalContext } from "./context/store";
+import Link from "next/link";
 
 const Home = () => {
   const [initialClicksCount, setInitialClicksCount] = useState(0);
@@ -63,17 +63,16 @@ const Home = () => {
     }
 
     if (item.current) {
-      item.current.style.position = 'absolute';
+      item.current.style.position = "absolute";
       item.current.style.left = `${posx + 10}px`;
       item.current.style.top = `${posy + 10}px`;
-      item.current.style.display = 'block';
+      item.current.style.display = "block";
     }
     if (clickItem.current) {
-      clickItem.current.style.position = 'absolute';
+      clickItem.current.style.position = "absolute";
       clickItem.current.style.left = `${posx}px`;
       clickItem.current.style.top = `${posy - 20}px`;
-      clickItem.current.style.display = 'block';
-
+      clickItem.current.style.display = "block";
     }
   };
 
@@ -114,15 +113,19 @@ const Home = () => {
       ) : null}
       <section ref={container}>
         {clicksItem.map((click, i) => (
-          <span className={`${styles.hidden} ${styles.clic}`} key={i} ref={click}>
-            clic 
+          <span
+            className={`${styles.hidden} ${styles.clic}`}
+            key={i}
+            ref={click}
+          >
+            clic
           </span>
         ))}
         <div className={styles.gridRow}>
           <div
             ref={text0}
             className={`${styles.article} ${
-              clicksCount > 7 ? '' : styles.hidden
+              clicksCount > 7 ? "" : styles.hidden
             } ${styles.firstArticle}`}
           >
             {clicksCount < 7 && (
@@ -133,23 +136,23 @@ const Home = () => {
               </h2>
             )}
             <div>
-              Clicar es un seminario de Mediación Cultural Digital comisariado
-              por{' '}
-              <a href="https://www.desmusea.com" target="_blanck">
+              <b>Clicar</b> fue el seminario de mediación cultural digital comisariado
+              por{" "}
+              <Link href="https://www.desmusea.com">
                 Desmusea
-              </a>{' '}
-              que formó parte del programa <i>Caminar, clicar, desplazar </i>
-              impulsado por el Departamento de Educación del Museo Nacional
-              Centro de Arte Reina Sofía durante los meses de mayo a septiembre de 2022.
+              </Link>{" "}
+              que formó parte del programa <i>Caminar, clicar, desplazar</i> impulsado
+              por el Departamento de Educación del Museo Nacional Centro de Arte
+              Reina Sofía durante los meses de mayo a septiembre de 2022.
             </div>
           </div>
         </div>
         <div className={styles.gridRow}>
           <Link
-            href={linksActive ? '/poeticas' : ''}
+            href={linksActive ? "/poeticas" : ""}
             ref={text1}
             className={`${styles.article} ${
-              clicksCount > 7 ? '' : styles.hidden
+              clicksCount > 7 ? "" : styles.hidden
             }`}
           >
             <h2 className={styles.title}>
@@ -166,10 +169,10 @@ const Home = () => {
             />
           </Link>
           <Link
-            href={linksActive ? '/user' : ''}
+            href={linksActive ? "/user" : ""}
             ref={text2}
             className={`${styles.article} ${
-              clicksCount > 7 ? '' : styles.hidden
+              clicksCount > 7 ? "" : styles.hidden
             }`}
           >
             <h2 className={styles.title}>
@@ -186,10 +189,10 @@ const Home = () => {
             />
           </Link>
           <Link
-            href={linksActive ? '/virtual-infrastructour' : ''}
+            href={linksActive ? "/virtual-infrastructour" : ""}
             ref={text3}
             className={`${styles.article}  ${
-              clicksCount > 7 ? '' : styles.hidden
+              clicksCount > 7 ? "" : styles.hidden
             }`}
           >
             <h2 className={styles.title}>
@@ -206,10 +209,10 @@ const Home = () => {
             />
           </Link>
           <Link
-            href={linksActive ? '/mediar-dano-digital' : ''}
+            href={linksActive ? "/mediar-dano-digital" : ""}
             ref={text4}
             className={`${styles.article} ${
-              clicksCount > 7 ? '' : styles.hidden
+              clicksCount > 7 ? "" : styles.hidden
             }`}
           >
             <h2 className={styles.title}>
@@ -226,10 +229,10 @@ const Home = () => {
             />
           </Link>
           <Link
-            href={linksActive ? '/archivo' : ''}
+            href={linksActive ? "/archivo" : ""}
             ref={text5}
             className={`${styles.article}  ${
-              clicksCount > 7 ? '' : styles.hidden
+              clicksCount > 7 ? "" : styles.hidden
             }`}
           >
             <h2 className={styles.title}>
@@ -246,10 +249,10 @@ const Home = () => {
             />
           </Link>
           <Link
-            href={linksActive ? '/residuos-sonicos' : ''}
+            href={linksActive ? "/residuos-sonicos" : ""}
             ref={text6}
             className={`${styles.article} ${
-              clicksCount > 7 ? '' : styles.hidden
+              clicksCount > 7 ? "" : styles.hidden
             }`}
           >
             <h2 className={styles.title}>
