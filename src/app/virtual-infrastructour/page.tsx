@@ -13,6 +13,7 @@ export default function VirtualInfrastuctour() {
     >
       <h1 className="title">virtual infrastructour</h1>
       <article className="article">
+        <p>#activación</p>
         <p>
           Una de las vocaciones de la mediación cultural es la de transparentar
           la institución, revelarnos sus mecanismos internos, y presentarnos
