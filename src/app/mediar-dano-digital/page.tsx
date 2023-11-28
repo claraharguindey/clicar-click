@@ -12,9 +12,11 @@ export default function MediarElDano() {
       className="pageSection"
       onClick={() => setClicksCount(clicksCount + 1)}
     >
-      <h1 className="title">mediar el dano digital</h1>
+      <aside>
+        <h1 className="title">Mediar el dano digital</h1>
+        <span className="tag">#encuentro</span>
+      </aside>
       <article className="article">
-        <p>#activación</p>
         <p>
           Entendiendo el museo como un espacio en crisis continua, lo digital
           puede abordarse como un espacio poético para encontrar fórmulas de

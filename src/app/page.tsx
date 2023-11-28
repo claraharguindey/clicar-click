@@ -229,7 +229,7 @@ const Home = () => {
             />
           </Link>
           <Link
-            href={linksActive ? "/archivo" : ""}
+            href={linksActive ? "/sostenibilidad-y-archivo" : ""}
             ref={text5}
             className={`${styles.article}  ${
               clicksCount > 7 ? "" : styles.hidden

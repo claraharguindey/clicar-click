@@ -11,9 +11,11 @@ export default function Poeticas() {
       className="pageSection"
       onClick={() => setClicksCount(clicksCount + 1)}
     >
-      <h1 className="title">poéticas de lo hipervinculado</h1>
+      <aside>
+        <h1 className="title">poéticas de lo hipervinculado</h1>
+        <span>#activación</span>
+      </aside>
       <article className="article">
-        <p>#encuentro</p>
         <p>
           <i>Poéticas de lo hipervinculado</i> hace referencia directa a
           <i>Poéticas de lo inacabado</i> , una intervención que la artista

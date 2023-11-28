@@ -11,9 +11,11 @@ export default function VirtualInfrastuctour() {
       className="pageSection"
       onClick={() => setClicksCount(clicksCount + 1)}
     >
-      <h1 className="title">virtual infrastructour</h1>
+      <aside>
+        <h1 className="title">virtual infrastructour</h1>
+        <span>#activación</span>
+      </aside>
       <article className="article">
-        <p>#activación</p>
         <p>
           Una de las vocaciones de la mediación cultural es la de transparentar
           la institución, revelarnos sus mecanismos internos, y presentarnos

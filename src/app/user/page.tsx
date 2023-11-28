@@ -12,9 +12,11 @@ export default function User() {
       className="pageSection"
       onClick={() => setClicksCount(clicksCount + 1)}
     >
-      <h1 className="title">El usuario en el museo virtual</h1>
+      <aside>
+        <h1 className="title">El usuario en el museo virtual</h1>
+        <span className="tag">#encuentro</span>
+      </aside>
       <article className="article">
-        <p>#encuentro</p>
         <p>
           Elena Villaespesa es experta en estrategias digitales en museos,
           investigando en análisis de datos y experiencia del usuario para
