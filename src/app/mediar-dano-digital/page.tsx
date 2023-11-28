@@ -1,7 +1,8 @@
-'use client';
+"use client";
 
-import Image from 'next/image';
-import { useGlobalContext } from '../context/store';
+import Image from "next/image";
+import { useGlobalContext } from "../context/store";
+import Link from "next/link";
 
 export default function MediarElDano() {
   const { clicksCount, setClicksCount } = useGlobalContext();
@@ -11,64 +12,43 @@ export default function MediarElDano() {
       className="pageSection"
       onClick={() => setClicksCount(clicksCount + 1)}
     >
-        <h1 className="title">mediar el dano digital</h1>
+      <h1 className="title">mediar el dano digital</h1>
       <article className="article">
+        <p>#activación</p>
         <p>
-          <b>
-            <i>Poéticas de lo hipervinculado</i> pretende mostrar las
-            posibilidades y poéticas de lo que entendemos como mediación
-            cultural digital: prácticas de intermediación entre arte y públicos
-            a través de una tecnología que funciona como medio, y no como fin.
-          </b>
+          Entendiendo el museo como un espacio en crisis continua, lo digital
+          puede abordarse como un espacio poético para encontrar fórmulas de
+          alivio y reparación.
         </p>
         <p>
-          Entendiendo la mediación cultural como un territorio intermedio entre
-          obras y públicos donde ocurre un cuestionamiento, aprendizaje o
-          transmisión de conocimiento, la mediación cultural digital trata de
-          expandir este lugar mediante las posibilidades que nos presta la
-          tecnología.
+          El colectivo Ontologías Feministas, a través de la acción{" "}
+          <i>Mediar el daño digital</i>, partieron del museo como un espacio
+          sometido a la constante amenaza del daño, al deterioro irreversible de
+          sus piezas, a las personas que lo acceden y lo desbordan, haciéndolo
+          peligrar. En este sentido, la digitalización de las colecciones, los
+          archivos online y otras herramientas informáticas se plantean como
+          grandes aliadas frente a este proceso de pérdida.
+        </p>{" "}
+        <p>
+          Durante la activación se transitó, registró e intervino el Reina Sofía
+          a través de sus archivos y recursos digitales, como la radio del
+          museo, sus obras en gigapíxel, o el buscador de su web. Se fueron así,
+          señalando y significando ciertos fenómenos que apelaban a sus heridas,
+          como la impermanencia de las audioguías, la desorientación en espacios
+          digitales, las páginas 404, o los daños de las obras revelados a
+          través de las radiografías.
         </p>
         <p>
-          Sin embargo, en ocasiones las instituciones culturales hacen uso de la
-          tecnología como fin y no como medio de encuentro genuino con el
-          conocimiento. Por ejemplo una audioguía al uso, con datos sobre la
-          fecha, características y vida del autor de la obra, no ofrece una
-          experiencia enriquecida frente a la explicación que nos aportaría una
-          guía humana. Entenderíamos mediación digital cuando aprovecha la
-          potencia de este medio para ofrecer un contenido expandido: en el
-          recorrido, conectamos el Guernica con audios de una mujer que vivió el
-          bombardeo de pequeña, y con las emociones personales que nos provocó
-          su testimonio.
+          Frente a la frecuente retórica de lo digital como un riesgo que nos
+          puede hacer perder lo que somos, esta activación se amparó en los
+          beneficios y alivios que Internet nos ofrece, aprehendiendo el museo
+          desde la intimidad de una materialidad alternativa.
         </p>
         <p>
-          El recorrido también reivindicó el cuerpo desde lo digital a través de
-          una coreografía guiada a través del móvil que imitaba los movimientos
-          de Carmen, de Calder; igual que Calder aporta motricidad, juego,
-          transformación a una disciplina basada en la solidez y la firmeza,
-          incorporamos nuestra corporalidad latente y presente al otro lado de
-          la pantalla. Asimismo, pensamos en Konstant y su Nueva Babilonia para
-          preguntarnos cómo serán los museos en el metaverso y el papel de los
-          mediadores culturales como conocedoras de sus matices y posibilidades.
-        </p>
-        <p>
-          <i>Poéticas de lo hipervinculado</i> hace referencia directa a
-          <i>Poéticas de lo inacabado</i>, una intervención de Alejandra Riera
-          en el Museo Reina Sofía. En ella, ejecutó una oquedad en una pared que
-          ponía en contacto dos espacios contrapuestos: las bóvedas subterráneas
-          y la entrada del museo. Nos gusta pensar en este gesto como un acto
-          <i> hipervinculante</i>, que pone en común dos lugares del museo
-          ajenos en usos y funciones, pero que de pronto quedan íntima e
-          irreversiblemente conectados.
-        </p>
-        <p>
-          Esto nos lleva a pensar que las ideas que abrazamos desde la mediación
-          cultural digital, como son atravesar la Colección desde propuestas
-          no-lineales, desde lo rizomático, generando nuevas relaciones que
-          legitiman la experiencia personal de los públicos, en realidad no son
-          tan novedosas, sino que las mediadoras las llevan conociendo y
-          aplicando desde hace años. La tecnología no ha creado una disrupción,
-          sino que ha trasladado y acompañado aprendizajes a un nuevo entorno.
-          Hemos trasladado el vínculo al hipervínculo.
+          Accede al proyecto,{" "}
+          <Link href="https://ontologiasfeministasrecursos.hotglue.me/?lugares">
+            aquí
+          </Link>
         </p>
       </article>
       <div className="rowGridGallery">
