@@ -1,60 +1,63 @@
-'use client';
+"use client";
 
+import Link from "next/link";
 import { useGlobalContext } from "../context/store";
-import Image from 'next/image';
+import Image from "next/image";
 
 export default function User() {
   const { clicksCount, setClicksCount } = useGlobalContext();
 
   return (
-    <section className="pageSection" onClick={() => setClicksCount(clicksCount + 1)}>
-      <h1 className="title">el usuario en el museo virtual</h1>
+    <section
+      className="pageSection"
+      onClick={() => setClicksCount(clicksCount + 1)}
+    >
+      <h1 className="title">El usuario en el museo virtual</h1>
       <article className="article">
+        <p>#encuentro</p>
         <p>
-          <b>
-            En este encuentro con Elena Villaespesa significamos cómo, a la hora
-            de articular proyectos de mediación digital, resulta importante
-            personalizar a la persona que está al otro lado de la pantalla para
-            facilitar la interacción con nuestra propuesta.
-          </b>
+          Elena Villaespesa es experta en estrategias digitales en museos,
+          investigando en análisis de datos y experiencia del usuario para
+          numerosos museos de Europa y Estados Unidos entre los que figuran el
+          Metropolitan Museum of Art de Nueva York, o la Tate Modern de Londres.
         </p>
         <p>
-          La analista de datos Elena Villaespesa, que ha formado parte de los
-          equipos de estrategia digital de numerosos museos de Europa y Estados
-          Unidos, ha insistido desde hace años en la importancia creciente de la
-          parte digital de las instituciones culturales, hasta el punto que
-          museos como el Tate recibe más visitas a su web que la suma de sus
-          cuatro sedes físicas.
+          Elena ha insistido desde hace años en la importancia creciente de la
+          dimensión digital de estas instituciones y así lo ejemplifican los
+          estudios: la Tate recibe más visitas anuales a su web que la suma de
+          sus cuatro sedes físicas.
         </p>
         <p>
-          En este encuentro, Elena nos ofreció una panorámica de algunas
-          herramientas de determinación de las usuarias que entran en contacto
-          con el museo exclusivamente a través de la pantalla. Uno de ellos es
-          el <i>Visitor journey map</i> o Mapas de experiencia del usuario, que
-          delinean en qué términos tiene lugar este contacto entre institución y
-          visitante <i>online</i>. Esta herramienta permite conocer las
-          necesidades de la usuaria y ponerla en el centro a la hora de producir
-          este contenido, permitiendo que pueda completar sus objetivos. Por
-          ejemplo, Elena nos comentaba cómo la palabra <i>Obras</i> frente al
-          término <i>Colección</i>
-          en la página web de un museo permitía entender más claramente el
-          contenido de ese enlace, aumentando el número de <i>clics</i>.
+          Pensar en las usuarias de la web como visitantes del Museo condiciona
+          el modo en que entendemos y atendemos a esta versión online de la
+          institución. A través de tiempos de visionado, la ubicación de los
+          clics en la pantalla, o los recorridos que hacen los cursores de las
+          usuarias navegando entre hipervínculos podemos hacer un análisis
+          datificado de la experiencia y del modo en que podemos, como
+          mediadoras, trabajar con ella tras las pantallas.
         </p>
         <p>
-          Esta segmentación de públicos y puesta en relieve del perfil de la
-          usuaria (intereses, necesidades, emociones, oportunidades, etc.) no es
-          un proceso distinto de las preguntas que, como mediadoras, nos
-          planteamos a la hora de diseñar un taller presencial. ¿Cómo compartir
-          los conocimientos que queremos incluir? ¿Cómo plantear las preguntas?
-          ¿De qué manera distribuir las paradas del recorrido? ¿Cómo cambiamos
-          la dinámica si las participantes son pequeñas, adolescentes, adultas o
-          personas mayores?
+          Podemos preguntarnos, ¿qué matrices conceptuales genera la
+          arquitectura de la web del museo en el que trabajamos? ¿Cómo se
+          organizan los relatos? ¿Cuáles son sus lógicas de archivo y
+          navegación? ¿Qué términos buscan las usuarias? ¿Quiénes son? ¿Por qué
+          han venido? ¿Cuánto tiempo estarán aquí? ¿Por qué volverían?
         </p>
         <p>
-          Dirigirnos estas cuestiones a la hora de crear nuestro proyecto, y
-          plantear conversaciones con nuestro público para conocer sus
-          dificultades y preferencias, nos dirigen a mediaciones digitales más
-          accesibles, satisfactorias, y complejas.
+          A través de estos análisis, Elena y su equipo descubrieron, por
+          ejemplo, que el término <i>Colección</i> en el menú de la web no era
+          un término fácilmente entendible por usuarias no familiarizadas con el
+          museo, optando por la palabra <i>Obras</i>. Estos pequeños gestos
+          orientados a conocer y atender las necesidades y preferencias de
+          quienes visitan estas instituciones virtuales nos dirigen a
+          mediaciones digitales más accesibles, satisfactorias, y complejas.
+        </p>
+        <p>
+          Contenidos complementarios:{" "}
+          <Link href="https://docs.google.com/document/d/1K2TWN8MphlQDAN9WtTxUvmooJrRbuB5ngzzTrhDR6qQ/edit">
+            aquí
+          </Link>
+          .
         </p>
       </article>
       <div className="rowGridGallery">

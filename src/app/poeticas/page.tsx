@@ -13,6 +13,7 @@ export default function Poeticas() {
     >
       <h1 className="title">poéticas de lo hipervinculado</h1>
       <article className="article">
+        <p>#encuentro</p>
         <p>
           <i>Poéticas de lo hipervinculado</i> hace referencia directa a
           <i>Poéticas de lo inacabado</i> , una intervención que la artista
