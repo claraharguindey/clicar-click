@@ -60,7 +60,7 @@ export default function Archivo() {
       <div className="rowGridGallery">
         <div className="columnGridGallery">
           <Image
-            src="/img/grupo.png"
+            src="/img/gema/1.png"
             width={200}
             height={200}
             className="imageGridGallery"
@@ -69,7 +69,7 @@ export default function Archivo() {
         </div>
         <div className="columnGridGallery">
           <Image
-            src="/img/grupo.png"
+            src="/img/gema/2.png"
             width={200}
             height={200}
             className="imageGridGallery"
@@ -78,7 +78,7 @@ export default function Archivo() {
         </div>
         <div className="columnGridGallery">
           <Image
-            src="/img/grupo.png"
+            src="/img/gema/3.png"
             width={200}
             height={200}
             className="imageGridGallery"
@@ -86,7 +86,7 @@ export default function Archivo() {
           />
           <div className="spaceGridGallery"></div>
           <Image
-            src="/img/grupo.png"
+            src="/img/gema/4.png"
             width={200}
             height={200}
             className="imageGridGallery"
