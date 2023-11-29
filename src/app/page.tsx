@@ -69,6 +69,7 @@ const Home = () => {
       item.current.style.top = `${posy + 10}px`;
       item.current.style.display = "block";
     }
+
     if (clickItem.current) {
       clickItem.current.style.position = "absolute";
       clickItem.current.style.left = `${posx}px`;
