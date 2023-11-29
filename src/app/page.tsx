@@ -78,7 +78,7 @@ const Home = () => {
   };
 
   const setGrid = () => {
-    if (container.current && gridDisplayed) {
+    if (container.current) {
       container.current.className = `${styles.grid}`;
     }
   };
@@ -92,9 +92,11 @@ const Home = () => {
   }, []);
 
   useEffect(() => {
-    setLinksActive(true);
-    setGrid();
-  }, [gridDisplayed]);
+    if (gridDisplayed) {
+      setLinksActive(true);
+      setGrid();
+    }
+  }, [gridDisplayed, setGridDisplayed]);
 
   const onClick = (event: React.MouseEvent) => {
     setClicksCount(clicksCount + 1);
