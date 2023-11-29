@@ -56,7 +56,7 @@ export default function MediarElDano() {
       <div className="rowGridGallery">
         <div className="columnGridGallery">
           <Image
-            src="/img/grupo.png"
+            src="/img/ontologias/1.png"
             width={200}
             height={200}
             className="imageGridGallery"
@@ -65,7 +65,14 @@ export default function MediarElDano() {
         </div>
         <div className="columnGridGallery">
           <Image
-            src="/img/grupo.png"
+            src="/img/ontologias/2.png"
+            width={200}
+            height={200}
+            className="imageGridGallery"
+            alt="Un grupo de personas en un pasillo del Museo Reina Sofía elevan sus móviles por encima de sus cabezas y miran la pantalla."
+          />
+           <Image
+            src="/img/ontologias/3.png"
             width={200}
             height={200}
             className="imageGridGallery"
@@ -74,15 +81,21 @@ export default function MediarElDano() {
         </div>
         <div className="columnGridGallery">
           <Image
-            src="/img/grupo.png"
+            src="/img/ontologias/4.png"
             width={200}
             height={200}
             className="imageGridGallery"
             alt="Un grupo de personas en un pasillo del Museo Reina Sofía elevan sus móviles por encima de sus cabezas y miran la pantalla."
           />
-          <div className="spaceGridGallery"></div>
           <Image
-            src="/img/grupo.png"
+            src="/img/ontologias/5.png"
+            width={200}
+            height={200}
+            className="imageGridGallery"
+            alt="Un grupo de personas en un pasillo del Museo Reina Sofía elevan sus móviles por encima de sus cabezas y miran la pantalla."
+          />
+          <Image
+            src="/img/ontologias/6.png"
             width={200}
             height={200}
             className="imageGridGallery"

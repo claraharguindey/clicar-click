@@ -54,7 +54,14 @@ export default function VirtualInfrastuctour() {
       <div className="rowGridGallery">
         <div className="columnGridGallery">
           <Image
-            src="/img/grupo.png"
+            src="/img/mario/1.png"
+            width={200}
+            height={200}
+            className="imageGridGallery"
+            alt="Un grupo de personas en un pasillo del Museo Reina Sofía elevan sus móviles por encima de sus cabezas y miran la pantalla."
+          />
+           <Image
+            src="/img/mario/6.png"
             width={200}
             height={200}
             className="imageGridGallery"
@@ -63,24 +70,31 @@ export default function VirtualInfrastuctour() {
         </div>
         <div className="columnGridGallery">
           <Image
-            src="/img/grupo.png"
+            src="/img/mario/2.png"
             width={200}
             height={200}
             className="imageGridGallery"
             alt="Un grupo de personas en un pasillo del Museo Reina Sofía elevan sus móviles por encima de sus cabezas y miran la pantalla."
           />
+         
         </div>
         <div className="columnGridGallery">
           <Image
-            src="/img/grupo.png"
+            src="/img/mario/3.png"
             width={200}
             height={200}
             className="imageGridGallery"
             alt="Un grupo de personas en un pasillo del Museo Reina Sofía elevan sus móviles por encima de sus cabezas y miran la pantalla."
           />
-          <div className="spaceGridGallery"></div>
           <Image
-            src="/img/grupo.png"
+            src="/img/mario/4.png"
+            width={200}
+            height={200}
+            className="imageGridGallery"
+            alt="Un grupo de personas en un pasillo del Museo Reina Sofía elevan sus móviles por encima de sus cabezas y miran la pantalla."
+          />
+          <Image
+            src="/img/mario/5.png"
             width={200}
             height={200}
             className="imageGridGallery"

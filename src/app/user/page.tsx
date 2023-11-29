@@ -65,7 +65,7 @@ export default function User() {
       <div className="rowGridGallery">
         <div className="columnGridGallery">
           <Image
-            src="/img/grupo.png"
+            src="/img/elena.png"
             width={200}
             height={200}
             className="imageGridGallery"
@@ -74,7 +74,7 @@ export default function User() {
         </div>
         <div className="columnGridGallery">
           <Image
-            src="/img/grupo.png"
+            src="/img/mapacalor.png"
             width={200}
             height={200}
             className="imageGridGallery"
@@ -83,7 +83,7 @@ export default function User() {
         </div>
         <div className="columnGridGallery">
           <Image
-            src="/img/grupo.png"
+            src="/img/call.png"
             width={200}
             height={200}
             className="imageGridGallery"
@@ -91,7 +91,7 @@ export default function User() {
           />
           <div className="spaceGridGallery"></div>
           <Image
-            src="/img/grupo.png"
+            src="/img/user.png"
             width={200}
             height={200}
             className="imageGridGallery"
