@@ -151,6 +151,10 @@ body {
     flex: 100%;
     max-width: 100%;
   }
+
+  .aside {
+    width: 100%;
+  }
 }
 
 @media (min-width: 600px) {
