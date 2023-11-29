@@ -92,8 +92,8 @@ const Home = () => {
   }, []);
 
   useEffect(() => {
-    setGrid();
     setLinksActive(true);
+    setGrid();
   }, [gridDisplayed]);
 
   const onClick = (event: React.MouseEvent) => {

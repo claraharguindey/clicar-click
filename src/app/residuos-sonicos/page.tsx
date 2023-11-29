@@ -50,25 +50,7 @@ export default function ResiduosSonicos() {
       <div className="rowGridGallery">
         <div className="columnGridGallery">
           <Image
-            src="/img/grupo.png"
-            width={200}
-            height={200}
-            className="imageGridGallery"
-            alt="Un grupo de personas en un pasillo del Museo Reina Sofía elevan sus móviles por encima de sus cabezas y miran la pantalla."
-          />
-        </div>
-        <div className="columnGridGallery">
-          <Image
-            src="/img/grupo.png"
-            width={200}
-            height={200}
-            className="imageGridGallery"
-            alt="Un grupo de personas en un pasillo del Museo Reina Sofía elevan sus móviles por encima de sus cabezas y miran la pantalla."
-          />
-        </div>
-        <div className="columnGridGallery">
-          <Image
-            src="/img/grupo.png"
+            src="/img/agnes/1.png"
             width={200}
             height={200}
             className="imageGridGallery"
@@ -76,12 +58,53 @@ export default function ResiduosSonicos() {
           />
           <div className="spaceGridGallery"></div>
           <Image
-            src="/img/grupo.png"
+            src="/img/agnes/2.png"
             width={200}
             height={200}
             className="imageGridGallery"
             alt="Un grupo de personas en un pasillo del Museo Reina Sofía elevan sus móviles por encima de sus cabezas y miran la pantalla."
           />
+          <Image
+            src="/img/agnes/3.png"
+            width={200}
+            height={200}
+            className="imageGridGallery"
+            alt="Un grupo de personas en un pasillo del Museo Reina Sofía elevan sus móviles por encima de sus cabezas y miran la pantalla."
+          />
+        </div>
+        <div className="columnGridGallery">
+          <Image
+            src="/img/agnes/4.png"
+            width={200}
+            height={200}
+            className="imageGridGallery"
+            alt="Un grupo de personas en un pasillo del Museo Reina Sofía elevan sus móviles por encima de sus cabezas y miran la pantalla."
+          />
+          <Image
+            src="/img/agnes/5.png"
+            width={200}
+            height={200}
+            className="imageGridGallery"
+            alt="Un grupo de personas en un pasillo del Museo Reina Sofía elevan sus móviles por encima de sus cabezas y miran la pantalla."
+          />
+          <Image
+            src="/img/agnes/6.png"
+            width={200}
+            height={200}
+            className="imageGridGallery"
+            alt="Un grupo de personas en un pasillo del Museo Reina Sofía elevan sus móviles por encima de sus cabezas y miran la pantalla."
+          />
+        </div>
+        <div className="columnGridGallery">
+          <div className="spaceGridGallery"></div>
+          <Image
+            src="/img/agnes/7.png"
+            width={200}
+            height={200}
+            className="imageGridGallery"
+            alt="Un grupo de personas en un pasillo del Museo Reina Sofía elevan sus móviles por encima de sus cabezas y miran la pantalla."
+          />
+          <div className="spaceGridGallery"></div>
         </div>
       </div>
     </section>
