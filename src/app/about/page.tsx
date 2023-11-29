@@ -11,7 +11,9 @@ export default function About() {
       className="pageSection"
       onClick={() => setClicksCount(clicksCount + 1)}
     >
-      <h1 className="title">Clicar</h1>
+      <aside>
+        <h1 className="title">Clicar</h1>
+      </aside>
       <article className="article">
         <p>
           <b>Clicar</b> fue el seminario sobre mediación cultural digital

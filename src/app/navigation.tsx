@@ -7,10 +7,18 @@ const linksInfo = [
   { label: "Acerca de", route: "/about" },
   { label: "Participantes", route: "/participantes" },
   { label: "Encuentros", route: "/" },
+  { label: "Textos", route: "/textos" },
 ];
 
 const Navigation = () => {
-  const { clicksCount, setClicksCount } = useGlobalContext();
+  const { clicksCount, setClicksCount, gridDisplayed, setGridDisplayed } =
+    useGlobalContext();
+
+  const displaySessions = (label: string) => {
+    if (label === "Encuentros" && !gridDisplayed) {
+      setGridDisplayed(true);
+    }
+  };
 
   return (
     <header className={styles.header}>
@@ -21,7 +29,9 @@ const Navigation = () => {
         <ul className={styles.menu}>
           {linksInfo.map(({ label, route }, i) => (
             <li key={i} className={styles.menuItem}>
-              <Link href={route}>{label}</Link>
+              <Link href={route} onClick={() => displaySessions(label)}>
+                {label}
+              </Link>
             </li>
           ))}
         </ul>

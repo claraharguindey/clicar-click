@@ -9,7 +9,8 @@ import Link from "next/link";
 const Home = () => {
   const [initialClicksCount, setInitialClicksCount] = useState(0);
   const [linksActive, setLinksActive] = useState(false);
-  const { clicksCount, setClicksCount } = useGlobalContext();
+  const { clicksCount, setClicksCount, gridDisplayed, setGridDisplayed } =
+    useGlobalContext();
 
   const container = useRef<HTMLAnchorElement>(null);
   const text0 = useRef<HTMLDivElement>(null);
@@ -77,17 +78,23 @@ const Home = () => {
   };
 
   const setGrid = () => {
-    if (container.current) {
+    if (container.current && gridDisplayed) {
       container.current.className = `${styles.grid}`;
     }
   };
 
   useEffect(() => {
     if (clicksCount > 7) {
+      setGridDisplayed(true);
       setGrid();
       setLinksActive(true);
     }
   }, []);
+
+  useEffect(() => {
+    setGrid();
+    setLinksActive(true);
+  }, [gridDisplayed]);
 
   const onClick = (event: React.MouseEvent) => {
     setClicksCount(clicksCount + 1);
@@ -125,24 +132,22 @@ const Home = () => {
           <div
             ref={text0}
             className={`${styles.article} ${
-              clicksCount > 7 ? "" : styles.hidden
+              clicksCount > 7 || gridDisplayed ? "" : styles.hidden
             } ${styles.firstArticle}`}
           >
-            {clicksCount < 7 && (
+            {clicksCount < 7 && !gridDisplayed && (
               <h2 className={styles.title}>
-                0 <br />
+                [0] <br />
                 <br />
                 Clicar
               </h2>
             )}
             <div>
-              <b>Clicar</b> fue el seminario de mediación cultural digital comisariado
-              por{" "}
-              <Link href="https://www.desmusea.com">
-                Desmusea
-              </Link>{" "}
-              que formó parte del programa <i>Caminar, clicar, desplazar</i> impulsado
-              por el Departamento de Educación del Museo Nacional Centro de Arte
+              <b>Clicar</b> fue el seminario de mediación cultural digital
+              comisariado por{" "}
+              <Link href="https://www.desmusea.com">Desmusea</Link> que formó
+              parte del programa <i>Caminar, clicar, desplazar</i> impulsado por
+              el Departamento de Educación del Museo Nacional Centro de Arte
               Reina Sofía durante los meses de mayo a septiembre de 2022.
             </div>
           </div>
@@ -152,7 +157,7 @@ const Home = () => {
             href={linksActive ? "/poeticas" : ""}
             ref={text1}
             className={`${styles.article} ${
-              clicksCount > 7 ? "" : styles.hidden
+              clicksCount > 7 || gridDisplayed ? "" : styles.hidden
             }`}
           >
             <h2 className={styles.title}>
@@ -172,7 +177,7 @@ const Home = () => {
             href={linksActive ? "/user" : ""}
             ref={text2}
             className={`${styles.article} ${
-              clicksCount > 7 ? "" : styles.hidden
+              clicksCount > 7 || gridDisplayed ? "" : styles.hidden
             }`}
           >
             <h2 className={styles.title}>
@@ -192,7 +197,7 @@ const Home = () => {
             href={linksActive ? "/virtual-infrastructour" : ""}
             ref={text3}
             className={`${styles.article}  ${
-              clicksCount > 7 ? "" : styles.hidden
+              clicksCount > 7 || gridDisplayed ? "" : styles.hidden
             }`}
           >
             <h2 className={styles.title}>
@@ -212,7 +217,7 @@ const Home = () => {
             href={linksActive ? "/mediar-dano-digital" : ""}
             ref={text4}
             className={`${styles.article} ${
-              clicksCount > 7 ? "" : styles.hidden
+              clicksCount > 7 || gridDisplayed ? "" : styles.hidden
             }`}
           >
             <h2 className={styles.title}>
@@ -232,7 +237,7 @@ const Home = () => {
             href={linksActive ? "/sostenibilidad-y-archivo" : ""}
             ref={text5}
             className={`${styles.article}  ${
-              clicksCount > 7 ? "" : styles.hidden
+              clicksCount > 7 || gridDisplayed ? "" : styles.hidden
             }`}
           >
             <h2 className={styles.title}>
@@ -252,7 +257,7 @@ const Home = () => {
             href={linksActive ? "/residuos-sonicos" : ""}
             ref={text6}
             className={`${styles.article} ${
-              clicksCount > 7 ? "" : styles.hidden
+              clicksCount > 7 || gridDisplayed ? "" : styles.hidden
             }`}
           >
             <h2 className={styles.title}>

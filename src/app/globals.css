@@ -4,9 +4,9 @@
   box-sizing: border-box;
 }
 
-ul[class],
-ol[class] {
+ul {
   padding: 0;
+  margin: 0;
 }
 
 body,
@@ -49,6 +49,10 @@ a {
   color: white;
 }
 
+a:hover {
+  opacity: 0.8;
+}
+
 input,
 button,
 textarea,
@@ -77,14 +81,24 @@ body {
 }
 
 .title {
-  font-size: 14px;
+  font-size: 32px;
   text-transform: uppercase;
   font-weight: 300;
   padding-bottom: 20px;
 }
 
-.article {
+.subtitle {
   font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.tag {
+  font-size: 14px;
+}
+
+.article {
+  font-size: 14px;
   text-align: justify;
 }
 
@@ -117,6 +131,10 @@ body {
   object-fit: cover;
 }
 
+.textsDescription {
+  max-width: 25%;
+}
+
 @media screen and (max-width: 800px) {
   .columnGridGallery {
     flex: 50%;
@@ -134,7 +152,6 @@ body {
 @media (min-width: 600px) {
   .pageSection {
     flex-direction: row;
-    justify-content: space-between;
   }
 
   .article {

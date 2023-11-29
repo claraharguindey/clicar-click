@@ -13,7 +13,7 @@ export default function ResiduosSonicos() {
     >
       <aside>
         <h1 className="title">Residuos sónicos</h1>
-        <span>#activación</span>
+        <span className="tag">#activación</span>
       </aside>
       <article className="article">
         <p>

@@ -13,7 +13,7 @@ export default function Poeticas() {
     >
       <aside>
         <h1 className="title">poéticas de lo hipervinculado</h1>
-        <span>#activación</span>
+        <span className="tag">#activación</span>
       </aside>
       <article className="article">
         <p>
