@@ -143,6 +143,10 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+  .textsDescription {
+    max-width: 100%;
+  }
+
   .columnGridGallery {
     flex: 100%;
     max-width: 100%;
