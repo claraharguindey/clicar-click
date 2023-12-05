@@ -68,29 +68,29 @@ export default function About() {
           />
         </div>
         <div className="columnGridGallery">
-          <Image
-            src="/img/grupo.png"
+        <Image
+            src="/img/mario/3.png"
             width={200}
             height={200}
             className="imageGridGallery"
-            alt="Un grupo de personas en un pasillo del Museo Reina Sofía elevan sus móviles por encima de sus cabezas y miran la pantalla."
+            alt="Captura de pantalla del recorrido virtual. Se ve un conjunto de cables en el interior de una tubería"
           />
         </div>
         <div className="columnGridGallery">
-          <Image
-            src="/img/grupo.png"
+        <Image
+            src="/img/agnes/6.png"
             width={200}
             height={200}
             className="imageGridGallery"
-            alt="Un grupo de personas en un pasillo del Museo Reina Sofía elevan sus móviles por encima de sus cabezas y miran la pantalla."
+            alt="Un grupo de personas habla en círculo frente a la obra Carmen de Calder, en el jardín del Museo"
           />
           <div className="spaceGridGallery"></div>
           <Image
-            src="/img/grupo.png"
+            src="/img/agnes/3.png"
             width={200}
             height={200}
             className="imageGridGallery"
-            alt="Un grupo de personas en un pasillo del Museo Reina Sofía elevan sus móviles por encima de sus cabezas y miran la pantalla."
+            alt="Dos chicos observan una máquina en una de las salas del museo"
           />
         </div>
       </div>
