@@ -60,7 +60,7 @@ export default function About() {
           Fotografías de{" "}
           <a href="https://begosolis.com/" target="_blanck">
             Bego Solís
-          </a>
+          </a>.
         </p>
       </article>
       <div className="rowGridGallery">
