@@ -29,7 +29,7 @@ export default function MediarElDano() {
           sus piezas, a las personas que lo acceden y lo desbordan, haciéndolo
           peligrar. En este sentido, la digitalización de las colecciones, los
           archivos online y otras herramientas informáticas se plantean como
-          grandes aliadas frente a este proceso de pérdida.
+          posibles aliadas frente a este proceso de pérdida.
         </p>{" "}
         <p>
           Durante la activación se transitó, registró e intervino el Reina Sofía
