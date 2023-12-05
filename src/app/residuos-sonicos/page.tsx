@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useGlobalContext } from "../context/store";
 import Image from "next/image";
 
@@ -48,9 +49,10 @@ export default function ResiduosSonicos() {
         </p>
         <p>
           Fotografías de{" "}
-          <a href="https://begosolis.com/" target="_blanck">
+          <Link href="https://begosolis.com/" target="_blanck">
             Bego Solís
-          </a>.
+          </Link>
+          .
         </p>
       </article>
       <div className="rowGridGallery">

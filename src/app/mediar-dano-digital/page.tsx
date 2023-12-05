@@ -43,14 +43,14 @@ export default function MediarElDano() {
         <p>
           Frente a la frecuente retórica de lo digital como un riesgo que nos
           puede hacer perder lo que somos, esta activación se amparó en los
-          beneficios y alivios que Internet nos ofrece, aprehendiendo el museo
+          beneficios y alivios que Internet nos ofrece, pero también sus fallos y sus <i>glitches</i>, aprehendiendo el museo
           desde la intimidad de una materialidad alternativa.
         </p>
         <p>
           Accede al proyecto,{" "}
           <Link href="https://ontologiasfeministasrecursos.hotglue.me/?lugares">
             aquí
-          </Link>
+          </Link>.
         </p>
       </article>
       <div className="rowGridGallery">

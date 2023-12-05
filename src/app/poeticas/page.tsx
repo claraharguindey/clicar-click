@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useGlobalContext } from "../context/store";
+import Link from "next/link";
 
 export default function Poeticas() {
   const { clicksCount, setClicksCount } = useGlobalContext();
@@ -66,9 +67,10 @@ export default function Poeticas() {
         </p>
         <p>
           Fotografías de{" "}
-          <a href="https://begosolis.com/" target="_blanck">
+          <Link href="https://begosolis.com/" target="_blanck">
             Bego Solís
-          </a>.
+          </Link>
+          .
         </p>
       </article>
       <div className="rowGridGallery">

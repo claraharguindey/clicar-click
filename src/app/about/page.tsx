@@ -58,9 +58,10 @@ export default function About() {
         </p>
         <p>
           Fotografías de{" "}
-          <a href="https://begosolis.com/" target="_blanck">
+          <Link href="https://begosolis.com/" target="_blanck">
             Bego Solís
-          </a>.
+          </Link>
+          .
         </p>
       </article>
       <div className="rowGridGallery">
