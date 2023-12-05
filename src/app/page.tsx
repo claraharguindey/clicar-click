@@ -14,12 +14,12 @@ const Home = () => {
 
   const container = useRef<HTMLDivElement>(null);
   const text0 = useRef<HTMLDivElement>(null);
-  const text1 = useRef<HTMLDivElement>(null);
-  const text2 = useRef<HTMLDivElement>(null);
-  const text3 = useRef<HTMLDivElement>(null);
-  const text4 = useRef<HTMLDivElement>(null);
-  const text5 = useRef<HTMLDivElement>(null);
-  const text6 = useRef<HTMLDivElement>(null);
+  const text1 = useRef<HTMLAnchorElement>(null);
+  const text2 = useRef<HTMLAnchorElement>(null);
+  const text3 = useRef<HTMLAnchorElement>(null);
+  const text4 = useRef<HTMLAnchorElement>(null);
+  const text5 = useRef<HTMLAnchorElement>(null);
+  const text6 = useRef<HTMLAnchorElement>(null);
   const click0 = useRef<HTMLDivElement>(null);
   const click1 = useRef<HTMLDivElement>(null);
   const click2 = useRef<HTMLDivElement>(null);
@@ -35,7 +35,7 @@ const Home = () => {
     text4,
     text5,
     text6,
-  ] as RefObject<HTMLDivElement>[];
+  ] as RefObject<HTMLAnchorElement>[];
 
   const clicksItem = [
     click0,
@@ -90,7 +90,7 @@ const Home = () => {
       setGrid();
       setLinksActive(true);
     }
-  }, []);
+  }, [clicksCount, setGridDisplayed]);
 
   useEffect(() => {
     if (gridDisplayed) {
@@ -226,7 +226,7 @@ const Home = () => {
             <h2 className={styles.title}>
               [4] <br />
               <br />
-              Mediar el dano digital
+              Mediar el daño digital
             </h2>
             <Image
               className={styles.image}

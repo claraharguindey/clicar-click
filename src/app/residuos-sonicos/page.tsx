@@ -54,7 +54,7 @@ export default function ResiduosSonicos() {
             width={200}
             height={200}
             className="imageGridGallery"
-            alt="Un grupo de personas en un pasillo del Museo Reina Sofía elevan sus móviles por encima de sus cabezas y miran la pantalla."
+            alt="La artista ayuda a una chica a utilizar la grabadora"
           />
           <div className="spaceGridGallery"></div>
           <Image
@@ -62,14 +62,14 @@ export default function ResiduosSonicos() {
             width={200}
             height={200}
             className="imageGridGallery"
-            alt="Un grupo de personas en un pasillo del Museo Reina Sofía elevan sus móviles por encima de sus cabezas y miran la pantalla."
+            alt="Una mujer sostiene un altavoz entre sus manos"
           />
           <Image
             src="/img/agnes/3.png"
             width={200}
             height={200}
             className="imageGridGallery"
-            alt="Un grupo de personas en un pasillo del Museo Reina Sofía elevan sus móviles por encima de sus cabezas y miran la pantalla."
+            alt="Dos chicos observan una máquina en una de las salas del museo"
           />
         </div>
         <div className="columnGridGallery">
@@ -78,21 +78,21 @@ export default function ResiduosSonicos() {
             width={200}
             height={200}
             className="imageGridGallery"
-            alt="Un grupo de personas en un pasillo del Museo Reina Sofía elevan sus móviles por encima de sus cabezas y miran la pantalla."
+            alt="Una chica aproxima un pequeño micrófono a la pared"
           />
           <Image
             src="/img/agnes/5.png"
             width={200}
             height={200}
             className="imageGridGallery"
-            alt="Un grupo de personas en un pasillo del Museo Reina Sofía elevan sus móviles por encima de sus cabezas y miran la pantalla."
+            alt="En el suelo hay algunos cables, auriculares, un ordenador y otros materiales técnicos usados en el encuentro"
           />
           <Image
             src="/img/agnes/6.png"
             width={200}
             height={200}
             className="imageGridGallery"
-            alt="Un grupo de personas en un pasillo del Museo Reina Sofía elevan sus móviles por encima de sus cabezas y miran la pantalla."
+            alt="Un grupo de personas habla en círculo frente a la obra Carmen de Calder, en el jardín del Museo"
           />
         </div>
         <div className="columnGridGallery">
@@ -102,7 +102,7 @@ export default function ResiduosSonicos() {
             width={200}
             height={200}
             className="imageGridGallery"
-            alt="Un grupo de personas en un pasillo del Museo Reina Sofía elevan sus móviles por encima de sus cabezas y miran la pantalla."
+            alt="Un grupo de personas observa una de las obras de una sala del Museo"
           />
           <div className="spaceGridGallery"></div>
         </div>

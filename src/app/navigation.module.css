@@ -37,6 +37,9 @@
   .counter {
     display: none;
   }
+  .menu {
+    flex-direction: column;
+  }
 }
 
 @keyframes fade {

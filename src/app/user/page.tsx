@@ -69,7 +69,7 @@ export default function User() {
             width={200}
             height={200}
             className="imageGridGallery"
-            alt="Un grupo de personas en un pasillo del Museo Reina Sofía elevan sus móviles por encima de sus cabezas y miran la pantalla."
+            alt="Elena explicando algo"
           />
         </div>
         <div className="columnGridGallery">
@@ -78,7 +78,7 @@ export default function User() {
             width={200}
             height={200}
             className="imageGridGallery"
-            alt="Un grupo de personas en un pasillo del Museo Reina Sofía elevan sus móviles por encima de sus cabezas y miran la pantalla."
+            alt="Detalle de un mapa de calor"
           />
         </div>
         <div className="columnGridGallery">
@@ -87,7 +87,7 @@ export default function User() {
             width={200}
             height={200}
             className="imageGridGallery"
-            alt="Un grupo de personas en un pasillo del Museo Reina Sofía elevan sus móviles por encima de sus cabezas y miran la pantalla."
+            alt="Captura de pantalla de una videollamada en la que solo se ven fragmentos de las ventanas de las usuarias conectadas a la llamada"
           />
           <div className="spaceGridGallery"></div>
           <Image
@@ -95,7 +95,7 @@ export default function User() {
             width={200}
             height={200}
             className="imageGridGallery"
-            alt="Un grupo de personas en un pasillo del Museo Reina Sofía elevan sus móviles por encima de sus cabezas y miran la pantalla."
+            alt="Detalle de una captura de pantalla donde se ve dibujado un pentágono y sobre él pone 'Perfil de usuario'. En cada vérticel del pentagono hay unos cuadros de colores con más textos ilegibles por la baja calidad de la imagen."
           />
         </div>
       </div>

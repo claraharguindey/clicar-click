@@ -68,11 +68,11 @@ export default function Poeticas() {
       <div className="rowGridGallery">
         <div className="columnGridGallery">
           <Image
-            src="/img/guernica.jpg"
+            src="/img/guernica.png"
             width={200}
             height={200}
             className="imageGridGallery"
-            alt="Un grupo de personas en un pasillo del Museo Reina Sofía elevan sus móviles por encima de sus cabezas y miran la pantalla."
+            alt="Un grupo de personas sentadas en el suelo observa el Guernica"
           />
         </div>
         <div className="columnGridGallery">
@@ -86,26 +86,26 @@ export default function Poeticas() {
         </div>
         <div className="columnGridGallery">
           <Image
-            src="/img/calder.jpg"
+            src="/img/calder.png"
             width={200}
             height={200}
             className="imageGridGallery"
-            alt="Un grupo de personas en un pasillo del Museo Reina Sofía elevan sus móviles por encima de sus cabezas y miran la pantalla."
+            alt="En la imagen aparece la obra de Calder llamada Calder"
           />
           <Image
-            src="/img/senor.jpg"
+            src="/img/senor.png"
             width={200}
             height={200}
             className="imageGridGallery"
-            alt="Un grupo de personas en un pasillo del Museo Reina Sofía elevan sus móviles por encima de sus cabezas y miran la pantalla."
+            alt="Un hombre sentado en el suelo escucha algo a través de unos auriculares."
           />
           <div className="spaceGridGallery"></div>
           <Image
-            src="/img/mireia.jpg"
+            src="/img/mireia.png"
             width={200}
             height={200}
             className="imageGridGallery"
-            alt="Un grupo de personas en un pasillo del Museo Reina Sofía elevan sus móviles por encima de sus cabezas y miran la pantalla."
+            alt="Dos chicas elevan sus móviles por encima de sus cabezas y miran la pantalla."
           />
         </div>
       </div>

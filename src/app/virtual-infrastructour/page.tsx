@@ -58,14 +58,14 @@ export default function VirtualInfrastuctour() {
             width={200}
             height={200}
             className="imageGridGallery"
-            alt="Un grupo de personas en un pasillo del Museo Reina Sofía elevan sus móviles por encima de sus cabezas y miran la pantalla."
+            alt="Captura de pantalla del recorrido virtual. Se ve un cable en el interior de una tubería"
           />
            <Image
             src="/img/mario/6.png"
             width={200}
             height={200}
             className="imageGridGallery"
-            alt="Un grupo de personas en un pasillo del Museo Reina Sofía elevan sus móviles por encima de sus cabezas y miran la pantalla."
+            alt="Captura de pantalla del recorrido virtual. Se ve un conjunto de cables en el interior de una tubería"
           />
         </div>
         <div className="columnGridGallery">
@@ -74,7 +74,7 @@ export default function VirtualInfrastuctour() {
             width={200}
             height={200}
             className="imageGridGallery"
-            alt="Un grupo de personas en un pasillo del Museo Reina Sofía elevan sus móviles por encima de sus cabezas y miran la pantalla."
+            alt="Captura de pantalla del recorrido virtual. Se ve un conjunto de cables en el interior de una tubería"
           />
          
         </div>
@@ -84,21 +84,21 @@ export default function VirtualInfrastuctour() {
             width={200}
             height={200}
             className="imageGridGallery"
-            alt="Un grupo de personas en un pasillo del Museo Reina Sofía elevan sus móviles por encima de sus cabezas y miran la pantalla."
+            alt="Captura de pantalla del recorrido virtual. Se ve un conjunto de cables en el interior de una tubería"
           />
           <Image
             src="/img/mario/4.png"
             width={200}
             height={200}
             className="imageGridGallery"
-            alt="Un grupo de personas en un pasillo del Museo Reina Sofía elevan sus móviles por encima de sus cabezas y miran la pantalla."
+            alt="Captura de pantalla del recorrido virtual. Se ve un conjunto de cables en el interior de una tubería"
           />
           <Image
             src="/img/mario/5.png"
             width={200}
             height={200}
             className="imageGridGallery"
-            alt="Un grupo de personas en un pasillo del Museo Reina Sofía elevan sus móviles por encima de sus cabezas y miran la pantalla."
+            alt="Captura de pantalla del recorrido virtual. Se ve el reflejo de la cámara en un charco."
           />
         </div>
       </div>

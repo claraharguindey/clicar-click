@@ -64,7 +64,7 @@ export default function Archivo() {
             width={200}
             height={200}
             className="imageGridGallery"
-            alt="Un grupo de personas en un pasillo del Museo Reina Sofía elevan sus móviles por encima de sus cabezas y miran la pantalla."
+            alt="La imagen contiene algunas fotografías antiguas de los pasillos del Museo Reina Sofía"
           />
         </div>
         <div className="columnGridGallery">
@@ -73,7 +73,7 @@ export default function Archivo() {
             width={200}
             height={200}
             className="imageGridGallery"
-            alt="Un grupo de personas en un pasillo del Museo Reina Sofía elevan sus móviles por encima de sus cabezas y miran la pantalla."
+            alt="Una chica sostiene y observa las fotografías de los pasillos del Museo Reina Sofía impresas en un papel."
           />
         </div>
         <div className="columnGridGallery">
@@ -82,7 +82,7 @@ export default function Archivo() {
             width={200}
             height={200}
             className="imageGridGallery"
-            alt="Un grupo de personas en un pasillo del Museo Reina Sofía elevan sus móviles por encima de sus cabezas y miran la pantalla."
+            alt="Fotografía distorsionada de unos cuadros en una pared."
           />
           <div className="spaceGridGallery"></div>
           <Image
@@ -90,7 +90,7 @@ export default function Archivo() {
             width={200}
             height={200}
             className="imageGridGallery"
-            alt="Un grupo de personas en un pasillo del Museo Reina Sofía elevan sus móviles por encima de sus cabezas y miran la pantalla."
+            alt="Un chico y una chica están frente a la obra Listados de Ignasi Aballí"
           />
         </div>
       </div>

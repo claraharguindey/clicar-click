@@ -13,7 +13,7 @@ export default function MediarElDano() {
       onClick={() => setClicksCount(clicksCount + 1)}
     >
       <aside>
-        <h1 className="title">Mediar el dano digital</h1>
+        <h1 className="title">Mediar el daño digital</h1>
         <span className="tag">#encuentro</span>
       </aside>
       <article className="article">
@@ -60,7 +60,7 @@ export default function MediarElDano() {
             width={200}
             height={200}
             className="imageGridGallery"
-            alt="Un grupo de personas en un pasillo del Museo Reina Sofía elevan sus móviles por encima de sus cabezas y miran la pantalla."
+            alt="La imagen contiene algunas fotografías antiguas de los pasillos del Museo Reina Sofía"
           />
         </div>
         <div className="columnGridGallery">
@@ -69,14 +69,14 @@ export default function MediarElDano() {
             width={200}
             height={200}
             className="imageGridGallery"
-            alt="Un grupo de personas en un pasillo del Museo Reina Sofía elevan sus móviles por encima de sus cabezas y miran la pantalla."
+            alt="Captura de pantalla de youtube donde pone 'El vídeo no está disponible'"
           />
-           <Image
+          <Image
             src="/img/ontologias/3.png"
             width={200}
             height={200}
             className="imageGridGallery"
-            alt="Un grupo de personas en un pasillo del Museo Reina Sofía elevan sus móviles por encima de sus cabezas y miran la pantalla."
+            alt="Tres mujeres se manifiestan frente la puerta de la exposición de Carl Andre con camisetas donde pone 'Where is Ana Mendieta?"
           />
         </div>
         <div className="columnGridGallery">
@@ -85,21 +85,21 @@ export default function MediarElDano() {
             width={200}
             height={200}
             className="imageGridGallery"
-            alt="Un grupo de personas en un pasillo del Museo Reina Sofía elevan sus móviles por encima de sus cabezas y miran la pantalla."
+            alt="Captura de la pantalla de error 404 de la web del Museo Reina Sofía"
           />
           <Image
             src="/img/ontologias/5.png"
             width={200}
             height={200}
             className="imageGridGallery"
-            alt="Un grupo de personas en un pasillo del Museo Reina Sofía elevan sus móviles por encima de sus cabezas y miran la pantalla."
+            alt="Detalle de una fotografía de la obra rasgada por la sufragista canadiense Mary Richardsonde de la Venus del Espejo de Velázquez"
           />
           <Image
             src="/img/ontologias/6.png"
             width={200}
             height={200}
             className="imageGridGallery"
-            alt="Un grupo de personas en un pasillo del Museo Reina Sofía elevan sus móviles por encima de sus cabezas y miran la pantalla."
+            alt="Detalle de captura de pantalla de la aplicación gigapíxel del Reina Sofía donde pueden verse algunos surcos en la pintura"
           />
         </div>
       </div>
