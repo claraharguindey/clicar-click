@@ -46,6 +46,12 @@ export default function ResiduosSonicos() {
           imaginación, de planteamiento de historias que se entrecruzan con lo
           entendido como auténtico o verídico.
         </p>
+        <p>
+          Fotografías de{" "}
+          <a href="https://begosolis.com/" target="_blanck">
+            Bego Solís
+          </a>.
+        </p>
       </article>
       <div className="rowGridGallery">
         <div className="columnGridGallery">

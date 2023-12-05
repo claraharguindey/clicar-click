@@ -50,6 +50,16 @@ export default function VirtualInfrastuctour() {
           terroristas, imponiendo una opacidad que no hizo sino subrayar la
           importancia latente de estas entrañas institucionales.
         </p>
+        <p>
+          Accede al proyecto haciendo clic{" "}
+          <a
+            href="https://www.mariosantamaria.net/Itinerary_Reina/index.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            aquí.
+          </a>
+        </p>
       </article>
       <div className="rowGridGallery">
         <div className="columnGridGallery">
@@ -60,7 +70,7 @@ export default function VirtualInfrastuctour() {
             className="imageGridGallery"
             alt="Captura de pantalla del recorrido virtual. Se ve un cable en el interior de una tubería"
           />
-           <Image
+          <Image
             src="/img/mario/6.png"
             width={200}
             height={200}
@@ -76,7 +86,6 @@ export default function VirtualInfrastuctour() {
             className="imageGridGallery"
             alt="Captura de pantalla del recorrido virtual. Se ve un conjunto de cables en el interior de una tubería"
           />
-         
         </div>
         <div className="columnGridGallery">
           <Image
@@ -86,19 +95,20 @@ export default function VirtualInfrastuctour() {
             className="imageGridGallery"
             alt="Captura de pantalla del recorrido virtual. Se ve un conjunto de cables en el interior de una tubería"
           />
+          <iframe
+            src="https://www.google.com/maps/embed?pb=%214v1654587308291%216m8%211m7%211sCAoSLEFGMVFpcE1tMm0tZ1BTNjA5TlJ6WUFRUWlfMkVDdndOMmd0WjdjWWtyWjFo%212m2%211d40.40778582548726%212d-3.695163618805485%213f238.19291924574705%214f0.106073052520685%215f0.7820865974627469"
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            className="imageGridGallery"
+            width="100%"
+            height="400"
+          ></iframe>
           <Image
             src="/img/mario/4.png"
             width={200}
             height={200}
             className="imageGridGallery"
             alt="Captura de pantalla del recorrido virtual. Se ve un conjunto de cables en el interior de una tubería"
-          />
-          <Image
-            src="/img/mario/5.png"
-            width={200}
-            height={200}
-            className="imageGridGallery"
-            alt="Captura de pantalla del recorrido virtual. Se ve el reflejo de la cámara en un charco."
           />
         </div>
       </div>

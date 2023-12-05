@@ -64,6 +64,12 @@ export default function Poeticas() {
           acompañado aprendizajes a un <i>nuevo</i> entorno. Hemos trasladado el
           <i>vínculo</i> al <i>hipervínculo</i>.
         </p>
+        <p>
+          Fotografías de{" "}
+          <a href="https://begosolis.com/" target="_blanck">
+            Bego Solís
+          </a>.
+        </p>
       </article>
       <div className="rowGridGallery">
         <div className="columnGridGallery">

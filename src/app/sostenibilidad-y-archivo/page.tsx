@@ -56,6 +56,12 @@ export default function Archivo() {
           supone también cuidar nuestra mediación, y asegurar su agencia y
           posibilidad más allá de la duración inmediata del proyecto.{" "}
         </p>
+        <p>
+          Fotografías de{" "}
+          <a href="https://begosolis.com/" target="_blanck">
+            Bego Solís
+          </a>
+        </p>
       </article>
       <div className="rowGridGallery">
         <div className="columnGridGallery">

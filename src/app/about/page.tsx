@@ -56,6 +56,12 @@ export default function About() {
           ideas en acciones específicas, ofreciendo una imagen prismática de las
           poéticas que se abren ante el diálogo con la institución.
         </p>
+        <p>
+          Fotografías de{" "}
+          <a href="https://begosolis.com/" target="_blanck">
+            Bego Solís
+          </a>
+        </p>
       </article>
       <div className="rowGridGallery">
         <div className="columnGridGallery">
@@ -68,7 +74,7 @@ export default function About() {
           />
         </div>
         <div className="columnGridGallery">
-        <Image
+          <Image
             src="/img/mario/3.png"
             width={200}
             height={200}
@@ -77,7 +83,7 @@ export default function About() {
           />
         </div>
         <div className="columnGridGallery">
-        <Image
+          <Image
             src="/img/agnes/6.png"
             width={200}
             height={200}
