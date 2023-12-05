@@ -144,7 +144,7 @@ body {
 
 @media screen and (max-width: 600px) {
   .textsDescription {
-    max-width: 100%;
+    min-width: 70%;
   }
 
   .columnGridGallery {
