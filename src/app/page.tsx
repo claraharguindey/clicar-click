@@ -62,18 +62,18 @@ const Home = () => {
       posx = e.clientX;
       posy = e.clientY;
     }
-
+console.log({posx, posy})
     if (item.current) {
       item.current.style.position = "absolute";
-      item.current.style.left = `${posx + 10}px`;
-      item.current.style.top = `${posy + 10}px`;
+      item.current.style.left = `${posx}px`;
+      item.current.style.top = `${posy}px`;
       item.current.style.display = "block";
     }
 
     if (clickItem.current) {
       clickItem.current.style.position = "absolute";
       clickItem.current.style.left = `${posx}px`;
-      clickItem.current.style.top = `${posy - 20}px`;
+      clickItem.current.style.top = `${posy - 65}px`;
       clickItem.current.style.display = "block";
     }
   };
