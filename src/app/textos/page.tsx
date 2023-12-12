@@ -25,6 +25,20 @@ export default function About() {
         <ul>
           <li>
             <Link
+              href={"https://tinyletter.com/desmusea/letters/message-9"}
+              target="_blank"
+            >
+              <h2 className="subtitle">Sobre la IA</h2>
+            </Link>
+            <p>
+              Si fuésemos lectoras de una newsletter y recibiésemos un texto
+              sobre Inteligencia Artificial, probablemente pararíamos de leer.
+              No es fácil encontrar razones para volver a interesarnos en una
+              h...
+            </p>
+          </li>
+          <li>
+            <Link
               href={"https://tinyletter.com/desmusea/letters/message-8"}
               target="_blank"
             >
@@ -117,12 +131,14 @@ export default function About() {
               href={"https://tinyletter.com/desmusea/letters/message-2"}
               target="_blank"
             >
-              <h2 className="subtitle">Sobre el museo nacional y la web 2.0</h2>
+              <h2 className="subtitle">
+                Sobre el museo ilustrado y la web 2.0
+              </h2>
             </Link>
 
             <p>
               Esta es la segunda de una trilogía de postales en torno al museo y
-              los paradigmas web. Puedes leer la anterior aquí ...
+              los paradigmas web. Puedes leer la anterior aquí...
             </p>
           </li>
           <br />
@@ -131,7 +147,7 @@ export default function About() {
               href={"https://tinyletter.com/desmusea/letters/message-1"}
               target="_blank"
             >
-              <h2 className="subtitle">Sobre el museo nacional y la web 1.0</h2>
+              <h2 className="subtitle">Sobre la wunderkammer y la web 1.0</h2>
             </Link>
             <p>
               La que sigue, es la primera de una trilogía de postales en las que
