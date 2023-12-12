@@ -122,7 +122,7 @@ export default function About() {
 
             <p>
               Con esta terminamos la trilogía de postales en torno al museo y
-              los paradigmas web. Puedes leer las anteriores aquí y aquí...
+              los paradigmas web.
             </p>
           </li>
           <br />
@@ -138,7 +138,7 @@ export default function About() {
 
             <p>
               Esta es la segunda de una trilogía de postales en torno al museo y
-              los paradigmas web. Puedes leer la anterior aquí...
+              los paradigmas web.
             </p>
           </li>
           <br />
