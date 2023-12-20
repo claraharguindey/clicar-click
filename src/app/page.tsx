@@ -190,10 +190,10 @@ const Home = () => {
             </h2>
             <Image
               className={styles.image}
-              src="/img/movil.png"
+              src="/img/mapacalor.png"
               width={200}
               height={250}
-              alt="Un grupo de personas en un pasillo del Museo Reina Sofía elevan sus móviles por encima de sus cabezas y miran la pantalla."
+              alt="Mapa de calor."
             />
           </Link>
           <Link
