@@ -62,7 +62,7 @@ const Home = () => {
       posx = e.clientX;
       posy = e.clientY;
     }
-console.log({posx, posy})
+
     if (item.current) {
       item.current.style.position = "absolute";
       item.current.style.left = `${posx}px`;
