@@ -37,6 +37,7 @@ export default function About() {
               y trabajos teóricos en torno a esta cuestión...
             </p>
           </li>
+          <br />
           <li>
             <Link
               href={"https://desmusea.substack.com/p/message-10"}
@@ -50,6 +51,7 @@ export default function About() {
               del territorio español...
             </p>
           </li>
+          <br />
           <li>
             <Link
               href={"https://desmusea.substack.com/p/message-9"}
@@ -64,6 +66,7 @@ export default function About() {
               h...
             </p>
           </li>
+          <br />
           <li>
             <Link
               href={"https://desmusea.substack.com/p/message-8"}
