@@ -25,7 +25,47 @@ export default function About() {
         <ul>
           <li>
             <Link
-              href={"https://tinyletter.com/desmusea/letters/message-9"}
+              href={"https://desmusea.substack.com/p/message-11"}
+              target="_blank"
+            >
+              <h2 className="subtitle">Ezprogui</h2>
+            </Link>
+            <p>
+              El término del año nos provoca ensoñaciones y deseos para el que
+              viene. Entre otros, el de continuar ahondando en la noción de
+              mediación cultural digital generando más experiencias, encuentros,
+              y trabajos teóricos en torno a esta cuestión...
+            </p>
+          </li>
+          <li>
+            <Link
+              href={"https://desmusea.substack.com/p/message-10"}
+              target="_blank"
+            >
+              <h2 className="subtitle">Ezprogui</h2>
+            </Link>
+            <p>
+              Hace tiempo que llevamos trabajando en un nuevo proyecto para
+              vitrin.as, nuestra galería de proyectos net.art en torno a museos
+              del territorio español...
+            </p>
+          </li>
+          <li>
+            <Link
+              href={"https://desmusea.substack.com/p/message-9"}
+              target="_blank"
+            >
+              <h2 className="subtitle">Ezprogui</h2>
+            </Link>
+            <p>
+              Hace tiempo que llevamos trabajando en un nuevo proyecto para
+              vitrin.as, nuestra galería de proyectos net.art en torno a museos
+              del territorio español...
+            </p>
+          </li>
+          <li>
+            <Link
+              href={"https://desmusea.substack.com/p/message-9"}
               target="_blank"
             >
               <h2 className="subtitle">Sobre la IA</h2>
@@ -39,7 +79,7 @@ export default function About() {
           </li>
           <li>
             <Link
-              href={"https://tinyletter.com/desmusea/letters/message-8"}
+              href={"https://desmusea.substack.com/p/message-8"}
               target="_blank"
             >
               <h2 className="subtitle">Sobre el patrimonio inmaterial</h2>
@@ -53,7 +93,7 @@ export default function About() {
           <br />
           <li>
             <Link
-              href={"https://tinyletter.com/desmusea/letters/message-7"}
+              href={"https://desmusea.substack.com/p/message-7"}
               target="_blank"
             >
               <h2 className="subtitle">Sobre los museos y la atención</h2>
@@ -68,7 +108,7 @@ export default function About() {
           <br />
           <li>
             <Link
-              href={"https://tinyletter.com/desmusea/letters/message-6"}
+              href={"https://desmusea.substack.com/p/message-6"}
               target="_blank"
             >
               <h2 className="subtitle">
@@ -83,7 +123,7 @@ export default function About() {
           <br />
           <li>
             <Link
-              href={"https://tinyletter.com/desmusea/letters/message-5"}
+              href={"https://desmusea.substack.com/p/message-5"}
               target="_blank"
             >
               <h2 className="subtitle">
@@ -99,7 +139,7 @@ export default function About() {
           <br />
           <li>
             <Link
-              href={"https://tinyletter.com/desmusea/letters/message-4"}
+              href={"https://desmusea.substack.com/p/message-4"}
               target="_blank"
             >
               <h2 className="subtitle">Sobre los museos y la ficción</h2>
@@ -112,7 +152,7 @@ export default function About() {
           <br />
           <li>
             <Link
-              href={"https://tinyletter.com/desmusea/letters/message-3"}
+              href={"https://desmusea.substack.com/p/message-3"}
               target="_blank"
             >
               <h2 className="subtitle">
@@ -128,7 +168,7 @@ export default function About() {
           <br />
           <li>
             <Link
-              href={"https://tinyletter.com/desmusea/letters/message-2"}
+              href={"https://desmusea.substack.com/p/message-2"}
               target="_blank"
             >
               <h2 className="subtitle">
@@ -144,7 +184,7 @@ export default function About() {
           <br />
           <li>
             <Link
-              href={"https://tinyletter.com/desmusea/letters/message-1"}
+              href={"https://desmusea.substack.com/p/message-1"}
               target="_blank"
             >
               <h2 className="subtitle">Sobre la wunderkammer y la web 1.0</h2>
@@ -158,7 +198,7 @@ export default function About() {
           <br />
           <li>
             <Link
-              href={"https://tinyletter.com/desmusea/letters/message"}
+              href={"https://desmusea.substack.com/p/message"}
               target="_blank"
             >
               <h2 className="subtitle">Sobre jardines digitales</h2>
