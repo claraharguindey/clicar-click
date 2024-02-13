@@ -28,7 +28,7 @@ export default function About() {
               href={"https://desmusea.substack.com/p/message-11"}
               target="_blank"
             >
-              <h2 className="subtitle">Ezprogui</h2>
+              <h2 className="subtitle">Clicar, click</h2>
             </Link>
             <p>
               El término del año nos provoca ensoñaciones y deseos para el que
@@ -40,19 +40,6 @@ export default function About() {
           <li>
             <Link
               href={"https://desmusea.substack.com/p/message-10"}
-              target="_blank"
-            >
-              <h2 className="subtitle">Ezprogui</h2>
-            </Link>
-            <p>
-              Hace tiempo que llevamos trabajando en un nuevo proyecto para
-              vitrin.as, nuestra galería de proyectos net.art en torno a museos
-              del territorio español...
-            </p>
-          </li>
-          <li>
-            <Link
-              href={"https://desmusea.substack.com/p/message-9"}
               target="_blank"
             >
               <h2 className="subtitle">Ezprogui</h2>
