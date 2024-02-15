@@ -16,13 +16,31 @@ export default function About() {
         <div>
           {" "}
           Recopilación de textos publicados en{" "}
-          <Link href={"https://tinyletter.com/desmusea"}>Servicio Postal</Link>,
+          <Link href={"https://desmusea.substack.com/"}>Servicio Postal</Link>,
           la <i>newsletter</i> de Desmusea sobre mediación cultural digital,
           museos e Internet.
         </div>
       </aside>
       <div>
         <ul>
+          <li>
+            <Link
+              href={"https://desmusea.substack.com/p/04e"}
+              target="_blank"
+            >
+              <h2 className="subtitle">
+                Etopía, media art y la economía feminista
+              </h2>
+            </Link>
+            <p>
+              Resulta urgente defender un modelo de institución cultural que se
+              desplace de lógicas mercantilistas y heteropatriarcales, que
+              construyan posibilidad y afección política. Por ello, en esta
+              postalita recuperamos tres proyectos de media art en torno a los
+              tres principios que la filósofa Nancy Fraser...
+            </p>
+          </li>
+          <br />
           <li>
             <Link
               href={"https://desmusea.substack.com/p/message-11"}
