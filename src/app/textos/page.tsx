@@ -24,10 +24,32 @@ export default function About() {
       <div>
         <ul>
           <li>
-            <Link
-              href={"https://desmusea.substack.com/p/04e"}
-              target="_blank"
-            >
+            <Link href={"https://desmusea.substack.com/p/491"} target="_blank">
+              <h2 className="subtitle">
+                sin proyectar sombra
+              </h2>
+            </Link>
+            <p>
+            Pese a lo ubicuo de estas postales ya sabéis que las Desmusea somos de Madrid, la ciudad que fue sobre agua edificada, cuyos muros de fuego son. Por eso será allí donde tendrá lugar nuestro proyecto piloto sin proyectar sombra, un grupo de aprendizaje que forma parte del programa “Mediación en residencia”...
+            </p>
+          </li>
+          <br />
+          <li>
+            <Link href={"https://desmusea.substack.com/p/apuntes"} target="_blank">
+              <h2 className="subtitle">
+                Apuntes para un tiempo aparte: una constelación
+              </h2>
+            </Link>
+            <p>
+              Como sabéis, la experiencia del tiempo no es universal, a pesar de
+              los medios que tratan de homogeneizar su percepción y los sistemas
+              capitalistas que nos urgen a aprovecharlo y explotarlo al
+              máximo....
+            </p>
+          </li>
+          <br />
+          <li>
+            <Link href={"https://desmusea.substack.com/p/04e"} target="_blank">
               <h2 className="subtitle">
                 Etopía, media art y la economía feminista
               </h2>
