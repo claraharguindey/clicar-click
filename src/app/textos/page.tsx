@@ -24,6 +24,18 @@ export default function About() {
       <div>
         <ul>
           <li>
+            <Link href={"https://desmusea.substack.com/p/a58"} target="_blank">
+              <h2 className="subtitle">Lo que pueden los gestos</h2>
+            </Link>
+            <p>
+              Ya nos alcanza la primera ola de calor del verano. Tratamos de
+              soportarla tras las persianas mientras nuestros ordenadores se
+              sobrecalientan, o nos refugiamos en el interior de museos y salas
+              de exposición climatizadas...
+            </p>
+          </li>
+          <br />
+          <li>
             <Link href={"https://desmusea.substack.com/p/e39"} target="_blank">
               <h2 className="subtitle">
                 IA, lo imaginal y un proyecto de arte y escuela
