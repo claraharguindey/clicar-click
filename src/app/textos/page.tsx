@@ -24,6 +24,44 @@ export default function About() {
       <div>
         <ul>
           <li>
+            <Link href={"https://desmusea.substack.com/p/55f"} target="_blank">
+              <h2 className="subtitle">Hodeien taldea (grupo de nubes)</h2>
+            </Link>
+            <p>
+              Hodeien Taldea ha sido el club de lectura experimental que hemos
+              impulsado dentro de la Residencia de investigación en Mediación
+              del Centro Huarte, durante los meses de septiembre a noviembre...
+            </p>
+          </li>
+          <br />
+          <li>
+            <Link href={"https://desmusea.substack.com/p/2ac"} target="_blank">
+              <h2 className="subtitle">Lo rupestre es lo relativo a la roca</h2>
+            </Link>
+            <p>
+              Esta postalita que viaja en muchas direcciones la escribimos hoy
+              desde Navarra. Ya llevamos una semana por aquí muy felices,
+              disfrutando de sus (muchísimas) propuestas culturales (y de alguna
+              festiva también, a ver); sobre todo ello ya os contaremos más...
+            </p>
+          </li>
+          <br />
+          <li>
+            <Link href={"https://desmusea.substack.com/p/9a8"} target="_blank">
+              <h2 className="subtitle">
+                Después de Internet, después del museo
+              </h2>
+            </Link>
+            <p>
+              ¿Es posible empezar septiembre sin hablar de septiembre? ¿Sin
+              pensar en nuevos propósitos o proyectos ilusionantes? Termina el
+              verano y condensamos las expectativas de cambio en algunos gestos
+              específicos: este año buscaré otro trabajo, volveré al gimnasio,
+              me apuntaré a un club de lectura...
+            </p>
+          </li>
+          <br />
+          <li>
             <Link href={"https://desmusea.substack.com/p/a58"} target="_blank">
               <h2 className="subtitle">Lo que pueden los gestos</h2>
             </Link>
