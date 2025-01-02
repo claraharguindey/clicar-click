@@ -24,6 +24,18 @@ export default function About() {
       <div>
         <ul>
           <li>
+            <Link href={"https://desmusea.substack.com/p/553"} target="_blank">
+              <h2 className="subtitle">Territorios de afectación</h2>
+            </Link>
+            <p>
+              En el marco de lo online, parece a priori complicado imaginar que
+              su experiencia, frecuentemente determinada por la deslocalización
+              y las lógicas relacionales capitalistas, nos pueda ofrecer
+              herramientas de afección a los espacios que vivimos...
+            </p>
+          </li>
+          <br />
+          <li>
             <Link href={"https://desmusea.substack.com/p/55f"} target="_blank">
               <h2 className="subtitle">Hodeien taldea (grupo de nubes)</h2>
             </Link>
